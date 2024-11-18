@@ -233,6 +233,29 @@
                         "label": "Mutlu Müşteri"
                     }
                 }
+            },
+            "contact": {
+                "title": "Projenizi Başlatalım",
+                "subtitle": "Dijital varlığınızı dönüştürmeye hazır mısınız? Bizimle iletişime geçin ve birlikte harika bir şey yaratalım.",
+                "form": {
+                    "title": "Bize Mesaj Gönderin",
+                    "subtitle": "Projeniz hakkında bize bilgi verin, en kısa sürede size dönüş yapalım.",
+                    "firstName": "Ad",
+                    "lastName": "Soyad",
+                    "email": "E-posta",
+                    "phone": "Telefon",
+                    "message": "Mesaj",
+                    "send": "Gönder",
+                    "sending": "Gönderiliyor..."
+                },
+                "info": {
+                    "title": "İletişim Bilgileri",
+                    "subtitle": "Size yardımcı olmak için buradayız. İster form aracılığıyla, ister doğrudan iletişim kanallarımızdan bize ulaşabilirsiniz.",
+                    "emailTitle": "E-posta",
+                    "phoneTitle": "Telefon",
+                    "addressTitle": "Adres",
+                    "hoursTitle": "Çalışma Saatleri"
+                }
             }
         },
         "about": {

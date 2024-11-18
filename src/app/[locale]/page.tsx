@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import PageLayout from '@/components/layout/PageLayout';
 import Hero from '@/components/sections/home/Hero';
 import dynamic from 'next/dynamic';
+import HexagonPattern from '@/components/ui/HexagonPattern';
 
 // Dynamic imports with loading fallbacks
 const Services = dynamic(() => import('@/components/sections/home/Services'), {
@@ -14,22 +15,12 @@ const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), 
     ssr: true,
 });
 
-const WhyChooseUs = dynamic(() => import('@/components/sections/home/WhyChooseUs'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
-    ssr: true,
-});
-
-const Team = dynamic(() => import('@/components/sections/home/Team'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
-    ssr: true,
-});
-
-const Testimonials = dynamic(() => import('@/components/sections/home/Testimonials'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
-    ssr: true,
-});
-
 const About = dynamic(() => import('@/components/sections/home/About'), {
+    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    ssr: true,
+});
+
+const Contact = dynamic(() => import('@/components/sections/home/Contact'), {
     loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
     ssr: true,
 });
@@ -47,11 +38,13 @@ export default function Home() {
         <PageLayout fullWidth noHero pageTitle="home.hero" noPadding>
             <Hero />
             <Services />
-            <About />
-            <Portfolio />
-            <WhyChooseUs />
-            <Team />
-            <Testimonials />
+            {/* background wrapper */}
+            <div className="relative min-h-screen">
+                <HexagonPattern />
+                <About />
+                <Portfolio />
+            </div>
+            <Contact />
         </PageLayout>
     );
 }

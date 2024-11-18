@@ -9,10 +9,10 @@ export default function About() {
     const t = useTranslations('pages.home.about');
 
     return (
-        <section id="about" className="py-24 relative overflow-hidden">
+        <section id="about" className=" relative overflow-hidden">
             {/* Technology SVG Background */}
 
-            <div className="container relative">
+            <div className="container relative py-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Content */}
                     <div>
@@ -82,7 +82,7 @@ export default function About() {
                         transition={{ duration: 0.5 }}
                         className="relative h-[600px] hidden lg:block"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent z-10" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-background w-1/2 to-transparent z-10" />
                         <Image
                             src="/images/odtu.jpg"
                             alt="ODTÜ Campus"

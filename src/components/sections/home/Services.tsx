@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Palette, Code2, Smartphone, Gauge, CheckCircle2 } from 'lucide-react';
-
+import PatternBackground from '@/components/ui/pattern-background';
 // Services data focused on web design and development
 const services = [
     {
@@ -36,8 +36,10 @@ export default function Services() {
     const t = useTranslations('pages.home.services');
 
     return (
-        <section id="services" className="py-24 relative overflow-hidden">
-            <div className="container relative">
+        <section id="services" className="py-24 relative  bg-background">
+            <PatternBackground className="absolute inset-0 " />
+
+            <div className="container relative z-10">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <motion.span
