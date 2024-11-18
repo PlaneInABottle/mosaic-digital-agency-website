@@ -1,0 +1,437 @@
+{
+    "metadata": {
+        "layout": { "title": "Hukuk Bürosu" },
+        "pages": {
+            "home": {
+                "title": "Ana Sayfa | Hukuk Bürosu",
+                "description": "Karmaşık zorluklar için uzman hukuk çözümleri"
+            },
+            "about": {
+                "title": "Hakkımızda | Hukuk Bürosu",
+                "description": "Tarihimizi, değerlerimizi ve mükemmellik taahhüdümüzü öğrenin"
+            },
+            "services": {
+                "title": "Uygulama Alanları | Hukuk Bürosu",
+                "description": "Çeşitli uygulama alanlarında kapsamlı hukuk hizmetlerimizi keşfedin"
+            },
+            "team": {
+                "title": "Avukatlarımız | Hukuk Bürosu",
+                "description": "Deneyimli hukuk profesyonelleri ekibimizi tanıyın"
+            },
+            "contact": {
+                "title": "Bize Ulaşın | Hukuk Bürosu",
+                "description": "Hukuk ekibimizle iletişime geçin"
+            }
+        }
+    },
+    "common": {
+        "buttons": {
+            "contactUs": "Bize Ulaşın",
+            "learnMore": "Daha Fazla Bilgi Edinin",
+            "viewProfile": "Profili Görüntüle",
+            "freeConsultation": "Ücretsiz Danışmanlık",
+            "startNow": "Şimdi Başlayın",
+            "startFreeTrial": "Ücretsiz Deneyin"
+        },
+        "navigation": {
+            "home": "Ana Sayfa",
+            "services": "Hizmetlerimiz",
+            "team": "Ekibimiz",
+            "about": "Hakkımızda",
+            "contact": "İletişim"
+        },
+        "general": {
+            "days": {
+                "monday": "Pazartesi",
+                "tuesday": "Salı",
+                "wednesday": "Çarşamba",
+                "thursday": "Perşembe",
+                "friday": "Cuma",
+                "saturday": "Cumartesi",
+                "sunday": "Pazar"
+            },
+            "email": "info@lawfirm.com",
+            "phone": "+90 555 123 45 67",
+            "address": "123 Legal Street, Suite 100, New York, NY 10001",
+
+            "close": "Kapalı"
+        },
+        "footer": {
+            "description": "1990 yılından beri güvenilir hukuk danışmanlığı, dürüstlük ve bağlılıkla hizmet veriyoruz.",
+            "officeHours": "Çalışma Saatleri",
+            "contactUs": "Bize Ulaşın",
+            "quickLinks": "Hızlı Linkler",
+            "privacyPolicy": "Gizlilik Politikası",
+            "termsOfService": "Hizmet Şartları",
+            "cookiePolicy": "Çerez Politikası",
+            "allRightsReserved": "Tüm hakları saklıdır",
+            "officeHoursTitle": "Çalışma Saatleri",
+
+            "links": {
+                "title": "Hızlı Linkler",
+                "home": "Ana Sayfa",
+                "services": "Hizmetlerimiz",
+                "team": "Ekibimiz",
+                "about": "Hakkımızda",
+                "contact": "İletişim"
+            }
+        },
+        "localeSwitcher": {
+            "label": "Dil Değiştir",
+            "locale": "{locale, select, en {🇺🇸 EN} tr {🇹🇷 TR} other {Bilinmeyen}}"
+        }
+    },
+    "pages": {
+        "home": {
+            "hero": {
+                "title": "Güçlüklerin Üstesinden Gelin",
+                "subtitle": "Güçlüklerin üstesinden gelmek ve başarılı olmak için gerekli olan güven, performans ve odaklanma için en iyi yer",
+                "topper": "ŞEHİRDEKİ EN İYİ GYM",
+                "description": "Deneyimli avukatlarımızdan oluşan ekibimiz, bütünlük, mükemmeliyet ve müşteri başarısına olan bağlılıkla olağanüstü hukuk hizmetleri sunmaktadır.",
+                "contactButton": "Ücretsiz Danışmanlık",
+                "servicesButton": "Hizmetlerimiz",
+                "yearsExperience": "Yıl Deneyim",
+                "casesWon": "Başarıyla Çözülmüş Dava Sayısı",
+                "scrollToExplore": "Keşfetmek İçin Kaydır",
+                "contactUs": "Bize Ulaşın",
+                "learnMore": "Hizmetlerimiz"
+            },
+            "services": {
+                "ourServices": "Hizmetlerimiz",
+
+                "title": "Sizi Güçlendirelim",
+                "description": "Vücutlarınızı aerobik aktivite dönemlerinden en iyi eğitim araçları için geliştirme dönemlerine kaydırarak güçlü bir anaerobik aktiviteye kavuşturun. Vücutlarınız aerobik modda olduğunda, vücutlarınız oksijen kullanır.",
+                "learnMore": "Daha Fazla Bilgi Edinin",
+                "corporate": {
+                    "title": "Şirket Hukuku",
+                    "description": "İşletmeler için birleşme ve devralmalar, uyum ve diğer yasal işlemler konusunda uzman rehberlik.",
+                    "learnMore": "Şirket Hukuku"
+                },
+                "family": {
+                    "title": "Aile Hukuku",
+                    "description": "Boşanma, velayet ve diğer ailevi yasal meselelerde şefkatli temsil.",
+                    "learnMore": "Aile Hukuku Detayları"
+                },
+                "criminal": {
+                    "title": "Ceza Savunması",
+                    "description": "Devlet ve federal düzeyde ceza davalarında güçlü savunma stratejileri ve temsil.",
+                    "learnMore": "Ceza Savunması Detayları"
+                },
+                "realEstate": {
+                    "title": "Emlak Hukuku",
+                    "description": "Emlak işlemleri, gelişimi ve ihtilafları için kapsamlı hukuk hizmetleri.",
+                    "learnMore": "Emlak Hukuku Detayları"
+                },
+                "intellectual": {
+                    "title": "Fikri Mülkiyet",
+                    "description": "Patentler, ticari markalar, telif hakları ve ticaret sırlarının korunması ve uygulanması.",
+                    "learnMore": "Fikri Mülkiyet Detayları"
+                },
+                "litigation": {
+                    "title": "Sivil Dava",
+                    "description": "Karmaşık sivil ihtilaflarda ve dava işlemlerinde uzman temsil.",
+                    "learnMore": "Sivil Dava Detayları"
+                }
+            },
+            "whyChooseUs": {
+                "topper": "Neden Biz?",
+                "title": "İstediğiniz forma ulaşmanız için çalışıyoruz",
+                "description": "Deneyimli spor hocalarımızdan oluşan ekibimiz, sizin başarınızı geliştirmek için çalışıyor.",
+                "reasons": {
+                    "first": "Başarınızı Geliştirmek İçin Çalışıyoruz",
+                    "second": "Süreçte Sizinle Birlikte Çalışıyoruz",
+                    "third": "En İyileriyle Çalışıyoruz"
+                },
+                "learnMore": "Daha Fazla Bilgi Edinin"
+            },
+            "testimonials": {
+                "title": "Müşterilerimiz Ne Diyor",
+                "subtitle": "Değerli müşterilerimizin hukuk hizmetlerimizle ilgili deneyimlerini okuyun",
+                "testimonial1": {
+                    "name": "John Smith",
+                    "role": "Kurumsal Müşteri",
+                    "content": "Ekip, kurumsal yeniden yapılanma sürecinde olağanüstü hukuki rehberlik sağladı. Uzmanlıkları ve profesyonellikleri, karmaşık süreci yönetilebilir hale getirdi."
+                },
+                "testimonial2": {
+                    "name": "Sarah Johnson",
+                    "role": "Aile Hukuku Müşterisi",
+                    "content": "Zor bir dönemde hem şefkat hem de yetkinlik gösterdiler. Davama adanmışlıkları, en iyi sonucu getirdi."
+                },
+                "testimonial3": {
+                    "name": "Michael Chen",
+                    "role": "Emlak Geliştirici",
+                    "content": "Emlak hukukundaki derin anlayışları ve detaylara gösterdikleri özen, bizi olası sorunlardan kurtardı. Herhangi bir emlak işi için şiddetle tavsiye ederim."
+                }
+            },
+            "parallax": {
+                "title": "Hayatınızı Bugün Dönüştürün",
+                "description": "Fitness hedeflerine doğru ilk adımı atmış olan kararlı bireylerin topluluğuna katılın. Uzman eğitmenlerimiz, daha sağlıklı ve güçlü bir siz olma yolculuğunuzda size rehberlik etsin.",
+                "cta": "Yolculuğunuza Başlayın"
+            }
+        },
+        "about": {
+            "title": "Hakkımızda",
+            "subtitle": "Değerlerimiz, Tarihimiz ve Ekibimiz",
+            "description": "Değerlerimiz, Tarihimiz ve Ekibimiz",
+            "established": "1990",
+            "legacy": "Hukukta Yılların Mirası",
+            "hero": {
+                "title": "Hakkımızda",
+                "subtitle": "Değerlerimiz, Tarihimiz ve Ekibimiz",
+                "stats": {
+                    "years": "Hukukta Yılların Mirası",
+                    "lawyers": "Avukatlar",
+                    "cases": "Başarıyla Çözülmüş Davalar"
+                }
+            },
+            "values": {
+                "title": "Değerlerimiz",
+                "subtitle": "Çalışmamızı Yönlendiren Temel İlkeler",
+                "items": {
+                    "dedication": {
+                        "title": "Adanmışlık",
+                        "description": "En yüksek profesyonellik ve etik standartlarıyla çalışıyoruz."
+                    },
+                    "excellence": {
+                        "title": "Mükemmellik",
+                        "description": "Her durumda mükemmel sonuçlar elde etmek için çaba gösteriyoruz."
+                    },
+                    "results": {
+                        "title": "Sonuçlar",
+                        "description": "Müşteri ihtiyaçlarına en uygun çözümleri bulmak için çalışıyoruz."
+                    },
+                    "community": {
+                        "title": "Toplumsal Katılım",
+                        "description": "Toplumsal sorunları çözmek için çalışıyoruz."
+                    }
+                }
+            },
+            "history": {
+                "title": "Tarihimiz",
+                "subtitle": "Kilometre Taşları ve Başarılar",
+                "milestones": {
+                    "1998": "Firma kuruldu",
+                    "2005": "İlk büyük duruşma başarısı",
+                    "2012": "Yeni uzmanlık alanlarına genişleme",
+                    "2018": "Uluslararası uygulamamızı başlattı",
+                    "2023": "Hukukta 25 yılı aşkın mükemmeliyeti kutluyoruz"
+                }
+            },
+            "team": {
+                "title": "Ekibimiz",
+                "subtitle": "Deneyimli Hukuk Profesyonelleri",
+                "viewAll": "Tüm Avukatları Görüntüle",
+                "stats": {
+                    "offices": {
+                        "value": "3",
+                        "label": "Ofisler"
+                    },
+                    "lawyers": {
+                        "value": "25",
+                        "label": "Avukatlar"
+                    },
+                    "experience": {
+                        "value": "30+",
+                        "label": "Yıl Deneyim"
+                    },
+                    "success": {
+                        "value": "1000+",
+                        "label": "Başaryla Çözülmüş Davalar"
+                    }
+                }
+            }
+        },
+        "services": {
+            "pageTitle": "Hizmetlerimiz | Fitness Center",
+            "pageDescription": "Çeşitli fitness hizmetlerimizi keşfedin",
+            "title": "Hizmetlerimiz",
+            "description": "Size özel tasarlanmış kapsamlı fitness hizmetlerimizi keşfedin",
+            "contactUs": "İletişime Geçin",
+            "learnMore": "Daha Fazla Bilgi Edinin",
+            "areas": {
+                "personal-training": {
+                    "title": "Kişisel Antrenman",
+                    "description": "Hedeflerinize ulaşmanız için size özel hazırlanmış antrenman programları",
+                    "longDescription": "Kişisel antrenman programlarımız, fitness hedeflerinize ulaşmanız için tamamen size özel olarak tasarlanmıştır. Deneyimli antrenörlerimiz, mevcut fitness seviyenizi değerlendirir ve hedeflerinizi belirleyerek size özel bir program oluşturur. İster kilo vermek, ister kas kütlenizi artırmak, ister genel sağlığınızı iyileştirmek isteyin, birebir rehberlik ve sürekli destek ile başarıya ulaşmanızı sağlarız. Beslenme danışmanlığı, ilerleme takibi ve programın sürekli optimizasyonu ile maksimum sonuç almanızı garanti ederiz.",
+                    "services": {
+                        "oneOnOne": "Birebir Antrenman",
+                        "assessment": "Fiziksel Değerlendirme",
+                        "nutrition": "Beslenme Danışmanlığı"
+                    },
+                    "serviceDescriptions": {
+                        "oneOnOne": "Profesyonel antrenörler eşliğinde birebir antrenman seansları",
+                        "assessment": "Detaylı fiziksel değerlendirme ve hedef belirleme",
+                        "nutrition": "Kişiselleştirilmiş beslenme planları ve takibi"
+                    },
+                    "serviceFeatures": {
+                        "oneOnOne": {
+                            "1": "Kişiye özel program tasarımı",
+                            "2": "Esnek planlama",
+                            "3": "Sürekli motivasyon desteği"
+                        },
+                        "assessment": {
+                            "1": "Vücut kompozisyonu analizi",
+                            "2": "Performans testleri",
+                            "3": "İlerleme takibi"
+                        },
+                        "nutrition": {
+                            "1": "Özel beslenme planı",
+                            "2": "Supplement önerileri",
+                            "3": "Haftalık görüşmeler"
+                        }
+                    },
+                    "ctaTitle": "Fitness Yolculuğunuza Bugün Başlayın",
+                    "ctaDescription": "Size özel hazırlanmış programlarla hedeflerinize ulaşın"
+                },
+                "group-fitness": {
+                    "title": "Grup Dersleri",
+                    "description": "Motivasyonu yüksek grup derslerimizle fitness hedeflerinize ulaşın",
+                    "longDescription": "Motivasyonu yüksek grup derslerimizle fitness hedeflerinize ulaşın",
+                    "services": {
+                        "hiit": "HIIT Antrenmanları",
+                        "yoga": "Yoga Dersleri",
+                        "spinning": "Spinning Seansları"
+                    },
+                    "serviceDescriptions": {
+                        "hiit": "Yüksek yoğunluklu interval antrenmanları",
+                        "yoga": "Her seviyeye uygun yoga dersleri",
+                        "spinning": "Kardiyovasküler dayanıklılık için spinning"
+                    },
+                    "serviceFeatures": {
+                        "hiit": {
+                            "1": "Maksimum kalori yakımı",
+                            "2": "Grup motivasyonu",
+                            "3": "Farklı zorluk seviyeleri"
+                        },
+                        "yoga": {
+                            "1": "Esneklik geliştirme",
+                            "2": "Stres azaltma",
+                            "3": "Denge çalışmaları"
+                        },
+                        "spinning": {
+                            "1": "Kardiyovasküler dayanıklılık",
+                            "2": "Yağ yakımı",
+                            "3": "Enerjik müzik eşliğinde antrenman"
+                        }
+                    },
+                    "ctaTitle": "Grup Derslerimize Katılın",
+                    "ctaDescription": "Motivasyonu yüksek grup ortamında fitness hedeflerinize ulaşın"
+                },
+                "strength-training": {
+                    "title": "Güç Antrenmanı",
+                    "description": "Profesyonel rehberlik eşliğinde güç ve kas gelişimi sağlayın",
+                    "longDescription": "Profesyonel rehberlik eşliğinde güç ve kas gelişimi sağlayın",
+                    "services": {
+                        "weightlifting": "Ağırlık Çalışması",
+                        "powerlifting": "Powerlifting",
+                        "conditioning": "Kondisyon"
+                    },
+                    "serviceDescriptions": {
+                        "weightlifting": "Temel ve ileri seviye ağırlık antrenmanları",
+                        "powerlifting": "Squat, bench press ve deadlift teknikleri",
+                        "conditioning": "Genel kondisyon ve dayanıklılık gelişimi"
+                    },
+                    "serviceFeatures": {
+                        "weightlifting": {
+                            "1": "Doğru form ve teknik",
+                            "2": "Progresif yüklenme",
+                            "3": "Kas dengesi ve simetri"
+                        },
+                        "powerlifting": {
+                            "1": "Güç geliştirme",
+                            "2": "Teknik mükemmelleştirme",
+                            "3": "Yarışma hazırlığı"
+                        },
+                        "conditioning": {
+                            "1": "Metabolik kondisyon",
+                            "2": "Dayanıklılık geliştirme",
+                            "3": "Fonksiyonel fitness"
+                        }
+                    },
+                    "ctaTitle": "Güçlenmeye Başlayın",
+                    "ctaDescription": "Profesyonel koçlarımızla güç ve kas hedeflerinize ulaşın"
+                }
+            }
+        },
+        "team": {
+            "title": "Ekibimiz",
+            "description": "Fitness ekibimizle tanışın",
+            "subtitle": "Fitness ekibimizle tanışın",
+            "viewAll": "Tüm Avukatları Görüntüle",
+            "viewProfile": "Profili Görüntüle",
+            "schedule": "Çalışma Saatleri",
+            "contact": "İletişim",
+            "about": "Hakkında",
+            "expertise": "Uzmanlık Alanları",
+            "specialties": "Uzmanlık Alanları",
+            "philosophy": "Felsefesi",
+            "sectionTitles": {
+                "specialties": "Uzmanlık Alanları",
+                "education": "Eğitim",
+                "barAdmissions": "Baro Üyelikleri",
+                "languages": "Diller"
+            },
+            "roles": {
+                "seniorPartner": "Kıdemli Ortak",
+                "partner": "Ortak",
+                "associate": "Avukat"
+            },
+            "services": {
+                "corporate": "Şirket Hukuku",
+                "mergers": "Birleşme ve Devralmalar",
+                "securities": "Menkul Kıymetler Hukuku",
+                "litigation": "Dava Hukuku",
+                "familyLaw": "Aile Hukuku",
+                "realEstate": "Gayrimenkul Hukuku",
+                "intellectual": "Fikri Mülkiyet Hukuku"
+            },
+            "languages": {
+                "english": "İngilizce",
+                "turkish": "Türkçe",
+                "arabic": "Arapça",
+                "french": "Fransızca",
+                "spanish": "İspanyolca"
+            },
+            "bios": {
+                "michael-smith": {
+                    "title": "Michael Smith",
+                    "role": "Kıdemli Ortak",
+                    "description": "",
+                    "bio": "Fitness ekibimizin lideri",
+                    "philosophy": "Fitness ekibimizin lideri",
+                    "certifications": "Fitness ekibimizin lideri"
+                }
+            },
+            "education": {
+                "harvard": "Harvard Hukuk Fakültesi",
+                "yale": "Yale Hukuk Fakültesi"
+            },
+            "barAdmissions": {
+                "newYork": "New York",
+                "california": "California"
+            }
+        },
+        "contact": {
+            "title": "Bize Ulaşın",
+            "description": "Fitness yolculuğunuzda size yardımcı olmak için buradayız. ",
+            "info": {
+                "title": "İletişim",
+                "subtitle": "Hukuki ihtiyaçlarınızı görüşmek için sabırsızlanıyoruz. Form aracılığıyla veya doğrudan ofisimizi arayarak bize ulaşın.",
+                "emailTitle": "E-posta",
+                "phoneTitle": "Telefon",
+                "addressTitle": "Adres",
+                "hoursTitle": "Ofis Saatleri"
+            },
+            "form": {
+                "title": "Bize Mesaj Gönderin",
+                "subtitle": "Lütfen bize mesaj göndermek için aşağıdaki formu doldurun. En kısa sürede size geri döneceğiz.",
+                "firstName": "Ad",
+                "lastName": "Soyad",
+                "email": "E-posta",
+                "phone": "Telefon",
+                "message": "Mesaj",
+                "send": "Gönder"
+            }
+        }
+    }
+}

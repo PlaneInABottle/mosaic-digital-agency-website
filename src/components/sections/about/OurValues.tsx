@@ -1,0 +1,58 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
+import { Dumbbell, Heart, Target, Trophy } from 'lucide-react';
+
+export default function OurValues() {
+    const t = useTranslations('pages.about.values');
+
+    const values = [
+        { icon: Dumbbell, key: 'dedication' },
+        { icon: Target, key: 'results' },
+        { icon: Trophy, key: 'excellence' },
+        { icon: Heart, key: 'community' },
+    ];
+
+    return (
+        <section className="py-20 bg-muted/50">
+            <div className="container">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center max-w-3xl mx-auto mb-16"
+                >
+                    <h2 className="text-3xl font-bold mb-4">{t('title')}</h2>
+                    <p className="text-muted-foreground">{t('subtitle')}</p>
+                </motion.div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {values.map((value, index) => {
+                        const Icon = value.icon;
+                        return (
+                            <motion.div
+                                key={value.key}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="text-center p-6 bg-background rounded-lg shadow-lg"
+                            >
+                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                                    <Icon className="w-8 h-8 text-primary" />
+                                </div>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t(`items.${value.key}.title`)}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                    {t(`items.${value.key}.description`)}
+                                </p>
+                            </motion.div>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
+    );
+}
