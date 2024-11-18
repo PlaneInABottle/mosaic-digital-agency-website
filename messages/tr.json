@@ -182,6 +182,57 @@
                 "title": "Hayatınızı Bugün Dönüştürün",
                 "description": "Fitness hedeflerine doğru ilk adımı atmış olan kararlı bireylerin topluluğuna katılın. Uzman eğitmenlerimiz, daha sağlıklı ve güçlü bir siz olma yolculuğunuzda size rehberlik etsin.",
                 "cta": "Yolculuğunuza Başlayın"
+            },
+            "portfolio": {
+                "topper": "PORTFOLYO",
+                "title": "Başarılı Projelerimiz",
+                "description": "Modern teknolojiler ve yaratıcı tasarımlarla hayata geçirdiğimiz projelerimizden örnekler.",
+                "viewAll": "Tüm Projeleri Görüntüle",
+                "projects": {
+                    "project1": {
+                        "title": "E-Ticaret Sitesi",
+                        "category": "Web Geliştirme",
+                        "description": "Yüksek performanslı, kullanıcı dostu e-ticaret platformu"
+                    },
+                    "project2": {
+                        "title": "Hukuk Bürosu Sitesi",
+                        "category": "Web Tasarım",
+                        "description": "Profesyonel ve güven veren hukuk bürosu web sitesi"
+                    },
+                    "project3": {
+                        "title": "Fitness Merkezi Sitesi",
+                        "category": "Web Geliştirme",
+                        "description": "Dinamik ve modern fitness merkezi web sitesi"
+                    },
+                    "project4": {
+                        "title": "Portfolyo Sitesi",
+                        "category": "Web Tasarım",
+                        "description": "Minimal ve etkileyici portfolyo web sitesi"
+                    }
+                }
+            },
+            "about": {
+                "topper": "HAKKIMIZDA",
+                "title": "Mükemmeliyetçi Yaklaşım, Kusursuz Sonuçlar",
+                "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği mezunu olan kurucumuz, teknoloji ve tasarımı mükemmel bir şekilde harmanlayarak dijital çözümler üretiyor. ODTÜ'nün prestijli akademik ortamında edindiğimiz analitik düşünce ve problem çözme yeteneklerimizi, her projemize yansıtıyoruz. Kusursuzluğu hedefleyen yaklaşımımız ve sürekli kendini yenileyen teknoloji anlayışımızla, müşterilerimize en iyi dijital deneyimi sunuyoruz.",
+                "stats": {
+                    "education": {
+                        "value": "ODTÜ",
+                        "label": "Bilgisayar Mühendisliği"
+                    },
+                    "experience": {
+                        "value": "5+ Yıl",
+                        "label": "Sektör Deneyimi"
+                    },
+                    "projects": {
+                        "value": "100+",
+                        "label": "Tamamlanan Proje"
+                    },
+                    "clients": {
+                        "value": "50+",
+                        "label": "Mutlu Müşteri"
+                    }
+                }
             }
         },
         "about": {

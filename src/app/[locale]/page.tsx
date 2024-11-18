@@ -9,7 +9,7 @@ const Services = dynamic(() => import('@/components/sections/home/Services'), {
     ssr: true,
 });
 
-const ParallaxSection = dynamic(() => import('@/components/sections/home/ParallaxSection'), {
+const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), {
     loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
     ssr: true,
 });
@@ -29,6 +29,11 @@ const Testimonials = dynamic(() => import('@/components/sections/home/Testimonia
     ssr: true,
 });
 
+const About = dynamic(() => import('@/components/sections/home/About'), {
+    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    ssr: true,
+});
+
 export async function generateMetadata() {
     const t = await getTranslations('metadata.pages.home');
     return {
@@ -42,7 +47,8 @@ export default function Home() {
         <PageLayout fullWidth noHero pageTitle="home.hero" noPadding>
             <Hero />
             <Services />
-            <ParallaxSection />
+            <About />
+            <Portfolio />
             <WhyChooseUs />
             <Team />
             <Testimonials />

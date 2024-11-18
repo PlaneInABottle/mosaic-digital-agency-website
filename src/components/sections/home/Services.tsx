@@ -36,8 +36,8 @@ export default function Services() {
     const t = useTranslations('pages.home.services');
 
     return (
-        <section id="services" className="py-24">
-            <div className="container">
+        <section id="services" className="py-24 relative overflow-hidden">
+            <div className="container relative">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <motion.span

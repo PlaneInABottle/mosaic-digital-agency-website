@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Palette, Code, LineChart } from 'lucide-react';
@@ -58,7 +60,7 @@ export default function Hero() {
                             variant="outline"
                             className="bg-transparent text-base relative overflow-hidden group border-white text-white hover:text-white hover:border-primary hover:bg-primary-rgba/20"
                         >
-                            <Link href="/services">{t('learnMore')}</Link>
+                            <Link href="#services">{t('learnMore')}</Link>
                         </Button>
                     </div>
 
