@@ -1,26 +1,26 @@
 {
     "metadata": {
-        "layout": { "title": "Hukuk Bürosu" },
+        "layout": { "title": "Mosaic Digital Agency" },
         "pages": {
             "home": {
-                "title": "Ana Sayfa | Hukuk Bürosu",
-                "description": "Karmaşık zorluklar için uzman hukuk çözümleri"
+                "title": "Ana Sayfa | Mosaic Digital Agency",
+                "description": "Modern ve yaratıcı dijital çözümler sunan öncü dijital ajansınız"
             },
             "about": {
-                "title": "Hakkımızda | Hukuk Bürosu",
-                "description": "Tarihimizi, değerlerimizi ve mükemmellik taahhüdümüzü öğrenin"
+                "title": "Hakkımızda | Mosaic Digital Agency",
+                "description": "Dijital dünyada iz bırakan projeler ve yaratıcı çözümler üreten ekibimizi tanıyın"
             },
             "services": {
-                "title": "Uygulama Alanları | Hukuk Bürosu",
-                "description": "Çeşitli uygulama alanlarında kapsamlı hukuk hizmetlerimizi keşfedin"
+                "title": "Hizmetlerimiz | Mosaic Digital Agency",
+                "description": "Web tasarım, dijital pazarlama ve yazılım geliştirme alanlarında profesyonel hizmetlerimiz"
             },
             "team": {
-                "title": "Avukatlarımız | Hukuk Bürosu",
-                "description": "Deneyimli hukuk profesyonelleri ekibimizi tanıyın"
+                "title": "Ekibimiz | Mosaic Digital Agency",
+                "description": "Yaratıcı ve deneyimli dijital profesyonellerden oluşan ekibimiz"
             },
             "contact": {
-                "title": "Bize Ulaşın | Hukuk Bürosu",
-                "description": "Hukuk ekibimizle iletişime geçin"
+                "title": "İletişim | Mosaic Digital Agency",
+                "description": "Dijital projeleriniz için bizimle iletişime geçin"
             }
         }
     },
@@ -84,53 +84,68 @@
     "pages": {
         "home": {
             "hero": {
-                "title": "Güçlüklerin Üstesinden Gelin",
-                "subtitle": "Güçlüklerin üstesinden gelmek ve başarılı olmak için gerekli olan güven, performans ve odaklanma için en iyi yer",
-                "topper": "ŞEHİRDEKİ EN İYİ GYM",
-                "description": "Deneyimli avukatlarımızdan oluşan ekibimiz, bütünlük, mükemmeliyet ve müşteri başarısına olan bağlılıkla olağanüstü hukuk hizmetleri sunmaktadır.",
-                "contactButton": "Ücretsiz Danışmanlık",
-                "servicesButton": "Hizmetlerimiz",
-                "yearsExperience": "Yıl Deneyim",
-                "casesWon": "Başarıyla Çözülmüş Dava Sayısı",
-                "scrollToExplore": "Keşfetmek İçin Kaydır",
-                "contactUs": "Bize Ulaşın",
-                "learnMore": "Hizmetlerimiz"
+                "topper": "MODERN WEB TASARIM",
+                "title": "İşletmenizi Dijitalde Öne Çıkarın",
+                "subtitle": "Modern, hızlı ve etkileyici web siteleri ile işletmenizin dijital varlığını güçlendirin. SEO dostu ve mobil uyumlu tasarımlarla müşterilerinize en iyi deneyimi sunun.",
+                "contactUs": "Projenizi Başlatalım",
+                "learnMore": "Neler Sunuyoruz?",
+                "features": {
+                    "design": {
+                        "title": "Modern Tasarım",
+                        "description": "Etkileyici ve Kullanıcı Dostu"
+                    },
+                    "development": {
+                        "title": "Hızlı Performans",
+                        "description": "Optimize Edilmiş Kodlama"
+                    },
+                    "marketing": {
+                        "title": "SEO Uyumlu",
+                        "description": "Arama Motorlarında Üst Sıralarda"
+                    }
+                }
             },
             "services": {
-                "ourServices": "Hizmetlerimiz",
-
-                "title": "Sizi Güçlendirelim",
-                "description": "Vücutlarınızı aerobik aktivite dönemlerinden en iyi eğitim araçları için geliştirme dönemlerine kaydırarak güçlü bir anaerobik aktiviteye kavuşturun. Vücutlarınız aerobik modda olduğunda, vücutlarınız oksijen kullanır.",
-                "learnMore": "Daha Fazla Bilgi Edinin",
-                "corporate": {
-                    "title": "Şirket Hukuku",
-                    "description": "İşletmeler için birleşme ve devralmalar, uyum ve diğer yasal işlemler konusunda uzman rehberlik.",
-                    "learnMore": "Şirket Hukuku"
-                },
-                "family": {
-                    "title": "Aile Hukuku",
-                    "description": "Boşanma, velayet ve diğer ailevi yasal meselelerde şefkatli temsil.",
-                    "learnMore": "Aile Hukuku Detayları"
-                },
-                "criminal": {
-                    "title": "Ceza Savunması",
-                    "description": "Devlet ve federal düzeyde ceza davalarında güçlü savunma stratejileri ve temsil.",
-                    "learnMore": "Ceza Savunması Detayları"
-                },
-                "realEstate": {
-                    "title": "Emlak Hukuku",
-                    "description": "Emlak işlemleri, gelişimi ve ihtilafları için kapsamlı hukuk hizmetleri.",
-                    "learnMore": "Emlak Hukuku Detayları"
-                },
-                "intellectual": {
-                    "title": "Fikri Mülkiyet",
-                    "description": "Patentler, ticari markalar, telif hakları ve ticaret sırlarının korunması ve uygulanması.",
-                    "learnMore": "Fikri Mülkiyet Detayları"
-                },
-                "litigation": {
-                    "title": "Sivil Dava",
-                    "description": "Karmaşık sivil ihtilaflarda ve dava işlemlerinde uzman temsil.",
-                    "learnMore": "Sivil Dava Detayları"
+                "ourServices": "WEB TASARIM HİZMETLERİMİZ",
+                "title": "İşletmeniz İçin Modern Web Çözümleri",
+                "description": "İşletmenizin ihtiyaçlarına özel, modern ve etkili web siteleri tasarlıyoruz. Hızlı, güvenli ve kullanıcı dostu çözümlerle müşterilerinize en iyi deneyimi sunun.",
+                "contactUs": "Projenizi Başlatalım",
+                "services": {
+                    "modern-design": {
+                        "title": "Modern Tasarım",
+                        "description": "Markanızı en iyi şekilde yansıtan, etkileyici ve modern web tasarımları.",
+                        "features": {
+                            "1": "Özel Tasarım ve Marka Uyumu",
+                            "2": "Kullanıcı Dostu Arayüz",
+                            "3": "Modern ve Temiz Görünüm"
+                        }
+                    },
+                    "responsive": {
+                        "title": "Mobil Uyumlu",
+                        "description": "Tüm cihazlarda mükemmel görünen ve çalışan responsive tasarım.",
+                        "features": {
+                            "1": "Tüm Ekranlara Uyumlu",
+                            "2": "Mobil Öncelikli Tasarım",
+                            "3": "Tutarlı Kullanıcı Deneyimi"
+                        }
+                    },
+                    "performance": {
+                        "title": "Yüksek Performans",
+                        "description": "Hızlı yüklenen ve sorunsuz çalışan optimizasyon odaklı geliştirme.",
+                        "features": {
+                            "1": "Hızlı Sayfa Yükleme",
+                            "2": "SEO Optimizasyonu",
+                            "3": "Yüksek Google Puanı"
+                        }
+                    },
+                    "development": {
+                        "title": "Güçlü Altyapı",
+                        "description": "Modern teknolojilerle geliştirilmiş güvenli ve ölçeklenebilir çözümler.",
+                        "features": {
+                            "1": "Güvenli Altyapı",
+                            "2": "Kolay Yönetim Paneli",
+                            "3": "Düzenli Yedekleme"
+                        }
+                    }
                 }
             },
             "whyChooseUs": {

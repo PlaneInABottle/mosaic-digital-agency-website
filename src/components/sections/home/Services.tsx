@@ -1,34 +1,34 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Palette, Code2, Smartphone, Gauge, CheckCircle2 } from 'lucide-react';
 
+// Services data focused on web design and development
 const services = [
     {
-        id: 'stretching',
-        title: 'Stretching',
-        imageUrl: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png',
+        id: 'modern-design',
+        Icon: Palette,
+        imageUrl:
+            'https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
-        id: 'hypertrophy',
-        title: 'Hypertrophy',
-        imageUrl: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png',
+        id: 'responsive',
+        Icon: Smartphone,
+        imageUrl:
+            'https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
-        id: 'strength',
-        title: 'Strength',
-        imageUrl: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png',
+        id: 'performance',
+        Icon: Gauge,
+        imageUrl:
+            'https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
-        id: 'yoga',
-        title: 'Yoga',
-        imageUrl: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png',
-    },
-    {
-        id: 'cardio',
-        title: 'Cardio',
-        imageUrl: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png',
+        id: 'development',
+        Icon: Code2,
+        imageUrl:
+            'https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
 ];
 
@@ -36,57 +36,101 @@ export default function Services() {
     const t = useTranslations('pages.home.services');
 
     return (
-        <section className="py-16 md:py-24">
-            <div className="container mb-12 px-16">
-                <div className="flex flex-col md:flex-row gap-4">
-                    <div className="basis-1/4 gap-2">
-                        <span className="text-primary font-medium uppercase">
-                            {t('ourServices')}
-                        </span>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-2">{t('title')}</h2>
-                    </div>
-                    <div className="basis-1/4 hidden md:block"></div>
-                    <div className="basis-1/2 flex items-end gap-2">
-                        <p className="text-muted-foreground mt-4">{t('description')}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-                {services.map((service, index) => (
-                    <motion.div
-                        key={service.id}
+        <section id="services" className="py-24">
+            <div className="container">
+                {/* Header */}
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <motion.span
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className="group relative h-[32vw] overflow-hidden"
+                        className="text-primary font-medium uppercase tracking-wider"
                     >
-                        <div
-                            className="absolute top-8 right-8 z-20 text-white/80 font-bold
-                                transition-all duration-300 
-                                opacity-0 translate-y-4
-                                group-hover:translate-y-0 group-hover:opacity-100"
+                        {t('ourServices')}
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-4xl md:text-5xl font-bold mt-4 mb-6"
+                    >
+                        {t('title')}
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-muted-foreground text-lg"
+                    >
+                        {t('description')}
+                    </motion.p>
+                </div>
+
+                {/* Services Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {services.map((service, index) => (
+                        <motion.div
+                            key={service.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true }}
+                            className="group relative bg-background rounded-xl overflow-hidden border border-border/50"
                         >
-                            <span className="text-7xl font-extrabold tracking-tighter">
-                                {(index + 1).toString().padStart(2, '0')}
-                            </span>
-                        </div>
-                        <div className="relative h-full w-full">
-                            <Image
-                                src={service.imageUrl}
-                                alt={service.title}
-                                fill
-                                className="object-cover transition-transform origin-center duration-500 group-hover:scale-125"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20" />
-                            <div className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-primary-rgba/40 z-10" />
-                        </div>
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                            <h1 className="text-3xl font-bold">{service.title}</h1>
-                        </div>
-                    </motion.div>
-                ))}
+                            {/* Service Card Content */}
+                            <div className="flex flex-col md:flex-row items-center gap-6 p-8">
+                                {/* Icon */}
+                                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <service.Icon className="w-8 h-8 text-primary" />
+                                </div>
+
+                                {/* Text Content */}
+                                <div className="flex-1 text-center md:text-left">
+                                    <h3 className="text-2xl font-bold mb-3">
+                                        {t(`services.${service.id}.title`)}
+                                    </h3>
+                                    <p className="text-muted-foreground">
+                                        {t(`services.${service.id}.description`)}
+                                    </p>
+
+                                    {/* Features List */}
+                                    <ul className="mt-4 space-y-2">
+                                        {[1, 2, 3].map((item) => (
+                                            <li key={item} className="flex items-center gap-2">
+                                                <CheckCircle2 className="w-5 h-5 text-primary" />
+                                                <span className="text-sm">
+                                                    {t(`services.${service.id}.features.${item}`)}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* CTA Button */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center mt-12"
+                >
+                    <button
+                        onClick={() =>
+                            document
+                                .getElementById('contact')
+                                ?.scrollIntoView({ behavior: 'smooth' })
+                        }
+                        className="bg-primary text-primary-foreground px-8 py-3 rounded-full 
+                                 hover:bg-primary-rgba/80 transition-colors duration-300"
+                    >
+                        {t('contactUs')}
+                    </button>
+                </motion.div>
             </div>
         </section>
     );
