@@ -7,11 +7,12 @@ export default function Footer() {
 
     return (
         <footer className="bg-primary text-primary-foreground">
-            <div className="container py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="container py-12">
+                {/* Main Footer Content */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <h3 className="text-xl font-semibold">Law Firm</h3>
+                        <h3 className="text-xl font-semibold">Mosaic Digital Agency</h3>
                         <p className="text-primary-foreground/80 text-sm">
                             {t('footer.description')}
                         </p>
@@ -31,7 +32,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <Link
-                                    href="/"
+                                    href="/#home"
                                     className="text-primary-foreground/80 hover:text-primary-foreground"
                                 >
                                     {t('footer.links.home')}
@@ -39,7 +40,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/practice-areas"
+                                    href="/#services"
                                     className="text-primary-foreground/80 hover:text-primary-foreground"
                                 >
                                     {t('footer.links.services')}
@@ -47,15 +48,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/team"
-                                    className="text-primary-foreground/80 hover:text-primary-foreground"
-                                >
-                                    {t('footer.links.team')}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/about"
+                                    href="/#about"
                                     className="text-primary-foreground/80 hover:text-primary-foreground"
                                 >
                                     {t('footer.links.about')}
@@ -63,7 +56,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/contact"
+                                    href="/#contact"
                                     className="text-primary-foreground/80 hover:text-primary-foreground"
                                 >
                                     {t('footer.links.contact')}
@@ -90,27 +83,6 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-
-                    {/* Office Hours */}
-                    <div className="space-y-4">
-                        <h3 className="text-lg font-semibold">{t('footer.officeHoursTitle')}</h3>
-                        <ul className="space-y-2 text-primary-foreground/80">
-                            <li className="flex justify-between">
-                                <span>
-                                    {t('general.days.monday')} - {t('general.days.friday')}
-                                </span>
-                                <span>9:00 AM - 6:00 PM</span>
-                            </li>
-                            <li className="flex justify-between">
-                                <span>{t('general.days.saturday')}</span>
-                                <span>10:00 AM - 2:00 PM</span>
-                            </li>
-                            <li className="flex justify-between">
-                                <span>{t('general.days.sunday')}</span>
-                                <span>{t('general.close')}</span>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
 
                 {/* Bottom Bar */}
@@ -125,9 +97,6 @@ export default function Footer() {
                             </a>
                             <a href="#" className="hover:text-primary-foreground">
                                 {t('footer.termsOfService')}
-                            </a>
-                            <a href="#" className="hover:text-primary-foreground">
-                                {t('footer.cookiePolicy')}
                             </a>
                         </div>
                     </div>

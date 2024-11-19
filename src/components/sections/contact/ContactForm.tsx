@@ -6,7 +6,7 @@ import { useState } from 'react';
 // import { usePathname } from 'next/navigation';
 
 export default function ContactForm() {
-    const t = useTranslations('pages.contact.form');
+    const t = useTranslations('pages.home.contact.form');
     const [isSubmitting, setIsSubmitting] = useState(false);
     // const pathname = usePathname();
 

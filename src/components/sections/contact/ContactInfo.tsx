@@ -1,33 +1,29 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function ContactInfo() {
-    const t = useTranslations('pages.contact.info');
+    const t = useTranslations('pages.home.contact.info');
+    const generalT = useTranslations('common.general');
 
     const contactDetails = [
         {
             icon: Mail,
             label: 'email',
-            value: 'contact@lawfirm.com',
-            href: 'mailto:contact@lawfirm.com',
+            value: generalT('email'),
+            href: `mailto:${generalT('email')}`,
         },
         {
             icon: Phone,
             label: 'phone',
-            value: '+1 (555) 123-4567',
-            href: 'tel:+15551234567',
+            value: generalT('phone'),
+            href: `tel:${generalT('phone').replace(/\s/g, '')}`,
         },
         {
             icon: MapPin,
             label: 'address',
-            value: '123 Legal Street, Suite 100\nNew York, NY 10001',
-        },
-        {
-            icon: Clock,
-            label: 'hours',
-            value: 'Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 2:00 PM',
+            value: generalT('address'),
         },
     ];
 
@@ -66,7 +62,7 @@ export default function ContactInfo() {
             {/* Map Embed */}
             <div className="aspect-video rounded-lg overflow-hidden">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25436351647!2d-74.11976404950945!3d40.69767006792137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1696431074374!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900120997!2d28.978058776944614!3d41.0066902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330b!2sGalata%20Tower!5e0!3m2!1sen!2str!4v1696431074374!5m2!1sen!2str"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
