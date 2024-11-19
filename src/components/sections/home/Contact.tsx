@@ -8,7 +8,7 @@ export default function Contact() {
     const t = useTranslations('pages.home.contact');
 
     return (
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24 bg-muted" id="contact">
             <div className="container">
                 {/* Section Header */}
                 <div className="text-center mb-12">
