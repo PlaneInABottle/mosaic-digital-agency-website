@@ -1,27 +1,28 @@
 import { getTranslations } from 'next-intl/server';
 import PageLayout from '@/components/layout/PageLayout';
-import Hero from '@/components/sections/home/Hero';
+// import Hero from '@/components/sections/home/Hero';
 import dynamic from 'next/dynamic';
 import HexagonPattern from '@/components/ui/HexagonPattern';
+import NewHero from '@/components/sections/home/NewHero';
 
 // Dynamic imports with loading fallbacks
 const Services = dynamic(() => import('@/components/sections/home/Services'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
     ssr: true,
 });
 
 const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
     ssr: true,
 });
 
 const About = dynamic(() => import('@/components/sections/home/About'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
     ssr: true,
 });
 
 const Contact = dynamic(() => import('@/components/sections/home/Contact'), {
-    loading: () => <div className="h-[400px] bg-muted animate-pulse" />,
+    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
     ssr: true,
 });
 
@@ -36,7 +37,8 @@ export async function generateMetadata() {
 export default function Home() {
     return (
         <PageLayout fullWidth noHero pageTitle="home.hero" noPadding>
-            <Hero />
+            {/* <Hero /> */}
+            <NewHero />
             <Services />
             {/* background wrapper */}
             <div className="relative min-h-screen">

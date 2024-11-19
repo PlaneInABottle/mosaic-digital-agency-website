@@ -20,8 +20,8 @@ export default async function BaseLayout({ children, locale }: Props) {
     const messages = await getMessages();
 
     return (
-        <html lang={locale}>
-            <body className={clsx(inter.className, 'min-h-screen flex flex-col')}>
+        <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
+            <body className={clsx(inter.className, 'flex min-h-screen flex-col')}>
                 <ThemeProvider>
                     <NextIntlClientProvider messages={messages}>
                         <Suspense fallback={null}>

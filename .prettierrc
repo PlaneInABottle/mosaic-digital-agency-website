@@ -13,5 +13,6 @@
     "quoteProps": "as-needed",
     "useTabs": false,
     "htmlWhitespaceSensitivity": "css",
-    "embeddedLanguageFormatting": "auto"
-} 
+    "embeddedLanguageFormatting": "auto",
+    "plugins": ["prettier-plugin-tailwindcss"]
+}
