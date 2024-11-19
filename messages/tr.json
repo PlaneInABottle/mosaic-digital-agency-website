@@ -149,23 +149,23 @@
             "about": {
                 "topper": "HAKKIMIZDA",
                 "title": "Mükemmeliyetçi Yaklaşım, Kusursuz Sonuçlar",
-                "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği mezunu olan kurucumuz, teknoloji ve tasarımı mükemmel bir şekilde harmanlayarak dijital çözümler üretiyor. ODTÜ'nün prestijli akademik ortamında edindiğimiz analitik düşünce ve problem çözme yeteneklerimizi, her projemize yansıtıyoruz. Kusursuzluğu hedefleyen yaklaşımımız ve sürekli kendini yenileyen teknoloji anlayışımızla, müşterilerimize en iyi dijital deneyimi sunuyoruz.",
+                "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği'nden mezun olduktan sonra, web tasarımı ve kodlama tutkumu takip ederek yoluma devam ettim. Modern ve yenilikçi web çözümleri üretme konusundaki tutkum, mükemmeliyetçi yaklaşımımla birleşiyor. Her projede en son teknolojileri kullanarak, minimal ve etkileyici tasarımlarla kusursuz kullanıcı deneyimleri yaratıyorum. Mozaik Dijital Ajansı, modern ve özgün tasarımıyla bu yaklaşımımın bir yansıması niteliğindedir.",
                 "stats": {
                     "education": {
                         "value": "ODTÜ",
                         "label": "Bilgisayar Mühendisliği"
                     },
-                    "experience": {
-                        "value": "5+ Yıl",
-                        "label": "Sektör Deneyimi"
+                    "approach": {
+                        "value": "Minimal",
+                        "label": "Tasarım Yaklaşımı"
                     },
-                    "projects": {
-                        "value": "100+",
-                        "label": "Tamamlanan Proje"
+                    "focus": {
+                        "value": "100%",
+                        "label": "Müşteri Memnuniyeti"
                     },
-                    "clients": {
-                        "value": "50+",
-                        "label": "Mutlu Müşteri"
+                    "innovation": {
+                        "value": "Yenilikçi",
+                        "label": "Çözümler"
                     }
                 }
             },

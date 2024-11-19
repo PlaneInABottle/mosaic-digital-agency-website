@@ -9,18 +9,18 @@ export default function About() {
     const t = useTranslations('pages.home.about');
 
     return (
-        <section id="about" className=" relative overflow-hidden">
+        <section id="about" className="relative overflow-hidden bg-black">
             {/* Technology SVG Background */}
 
             <div className="container relative py-24">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                     {/* Content */}
                     <div>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-primary font-medium uppercase tracking-wider"
+                            className="font-medium uppercase tracking-wider text-primary"
                         >
                             {t('topper')}
                         </motion.span>
@@ -29,7 +29,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-4xl md:text-5xl font-bold mt-4 mb-6"
+                            className="mb-6 mt-4 text-4xl font-bold md:text-5xl"
                         >
                             {t('title')}
                         </motion.h2>
@@ -38,7 +38,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-muted-foreground text-lg mb-8"
+                            className="mb-8 text-lg text-muted-foreground"
                         >
                             {t('description')}
                         </motion.p>
@@ -46,30 +46,30 @@ export default function About() {
                         {/* Stats Grid */}
                         <div className="grid grid-cols-2 gap-8">
                             <div className="space-y-2">
-                                <GraduationCap className="h-8 w-8 text-primary mb-2" />
+                                <GraduationCap className="mb-2 h-8 w-8 text-primary" />
                                 <h3 className="text-2xl font-bold">{t('stats.education.value')}</h3>
                                 <p className="text-muted-foreground">
                                     {t('stats.education.label')}
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <Code2 className="h-8 w-8 text-primary mb-2" />
+                                <Code2 className="mb-2 h-8 w-8 text-primary" />
+                                <h3 className="text-2xl font-bold">{t('stats.approach.value')}</h3>
+                                <p className="text-muted-foreground">{t('stats.approach.label')}</p>
+                            </div>
+                            <div className="space-y-2">
+                                <Trophy className="mb-2 h-8 w-8 text-primary" />
+                                <h3 className="text-2xl font-bold">{t('stats.focus.value')}</h3>
+                                <p className="text-muted-foreground">{t('stats.focus.label')}</p>
+                            </div>
+                            <div className="space-y-2">
+                                <Users className="mb-2 h-8 w-8 text-primary" />
                                 <h3 className="text-2xl font-bold">
-                                    {t('stats.experience.value')}
+                                    {t('stats.innovation.value')}
                                 </h3>
                                 <p className="text-muted-foreground">
-                                    {t('stats.experience.label')}
+                                    {t('stats.innovation.label')}
                                 </p>
-                            </div>
-                            <div className="space-y-2">
-                                <Trophy className="h-8 w-8 text-primary mb-2" />
-                                <h3 className="text-2xl font-bold">{t('stats.projects.value')}</h3>
-                                <p className="text-muted-foreground">{t('stats.projects.label')}</p>
-                            </div>
-                            <div className="space-y-2">
-                                <Users className="h-8 w-8 text-primary mb-2" />
-                                <h3 className="text-2xl font-bold">{t('stats.clients.value')}</h3>
-                                <p className="text-muted-foreground">{t('stats.clients.label')}</p>
                             </div>
                         </div>
                     </div>
@@ -80,14 +80,14 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="relative h-[600px] hidden lg:block"
+                        className="relative hidden h-[600px] lg:block"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-background w-1/2 to-transparent z-10" />
+                        <div className="absolute inset-0 z-10 w-1/2 bg-gradient-to-r from-black to-transparent" />
                         <Image
-                            src="/images/odtu.jpg"
-                            alt="ODTÜ Campus"
+                            src="/images/ben-png.png"
+                            alt="Ben"
                             fill
-                            className="object-cover object-left rounded-2xl"
+                            className="rounded-2xl object-cover object-top"
                         />
                     </motion.div>
                 </div>

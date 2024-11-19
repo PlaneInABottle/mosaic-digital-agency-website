@@ -2,8 +2,8 @@ import { getTranslations } from 'next-intl/server';
 import PageLayout from '@/components/layout/PageLayout';
 // import Hero from '@/components/sections/home/Hero';
 import dynamic from 'next/dynamic';
-import HexagonPattern from '@/components/ui/HexagonPattern';
 import NewHero from '@/components/sections/home/NewHero';
+import TextParallax from '@/components/sections/home/TextParallax';
 
 // Dynamic imports with loading fallbacks
 const Services = dynamic(() => import('@/components/sections/home/Services'), {
@@ -39,13 +39,11 @@ export default function Home() {
         <PageLayout fullWidth noHero pageTitle="home.hero" noPadding>
             {/* <Hero /> */}
             <NewHero />
+            <TextParallax />
             <Services />
             {/* background wrapper */}
-            <div className="relative min-h-screen">
-                <HexagonPattern />
-                <About />
-                <Portfolio />
-            </div>
+            <About />
+            <Portfolio />
             <Contact />
         </PageLayout>
     );
