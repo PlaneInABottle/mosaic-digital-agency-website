@@ -21,7 +21,7 @@ const ParallaxImg = ({
         target: ref,
         offset: ['start end', 'end start'],
     });
-    const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.5]);
+    const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.3]);
     const scale = useTransform(scrollYProgress, [0, 0.75], [1, 0.85]);
     const y = useTransform(scrollYProgress, [0, 1], [start, end]);
     return (
