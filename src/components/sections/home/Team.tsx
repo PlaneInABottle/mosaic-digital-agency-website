@@ -126,7 +126,7 @@ export default function TeamSection() {
                     <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                         <Link
                             href="/team"
-                            className="transition-colors hover:bg-primary-rgba/80 flex items-center gap-2"
+                            className="transition-colors hover:bg-primary/80 flex items-center gap-2"
                         >
                             View All Trainers
                             <ArrowRight className="h-4 w-4" />

@@ -25,12 +25,12 @@ export default function ThemeSwitcher() {
 
     return (
         <div className="flex items-center gap-2">
-            <Palette className="h-4 w-4 text-white" />
+            <Palette className="h-4 w-4 text-accent" />
             <select
                 value={theme}
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onChange={(e) => setTheme(e.target.value as any)}
-                className="bg-transparent text-white border-none text-sm focus:ring-0 focus:outline-none"
+                className="bg-transparent text-accent border-none text-sm focus:ring-0 focus:outline-none"
             >
                 {themes.map((t) => (
                     <option key={t.value} value={t.value} className="text-primary bg-background">

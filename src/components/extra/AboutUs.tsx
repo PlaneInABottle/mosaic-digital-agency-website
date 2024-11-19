@@ -14,7 +14,7 @@ const StarIcon = () => (
 export default function AboutSection() {
     return (
         <section className="relative h-full min-h-screen bg-background  ">
-            <span className="block absolute  w-full top-[12.5rem] bottom-[12.5rem] inset-x-0 bg-primary-rgba/60 "></span>
+            <span className="block absolute  w-full top-[12.5rem] bottom-[12.5rem] inset-x-0 bg-primary/60 "></span>
             <div className="flex relative flex-col md:flex-row items-center justify-center h-screen gap-4 z-10 p-8">
                 <div className="flex flex-col items-center h-1/2 w-full md:w-1/2  text-white p-6 rounded-lg">
                     <h2 className="text-3xl font-bold mb-4">About Us</h2>

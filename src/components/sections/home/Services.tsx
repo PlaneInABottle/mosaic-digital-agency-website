@@ -128,7 +128,7 @@ export default function Services() {
                                 ?.scrollIntoView({ behavior: 'smooth' })
                         }
                         className="bg-primary text-primary-foreground px-8 py-3 rounded-full 
-                                 hover:bg-primary-rgba/80 transition-colors duration-300"
+                                 hover:bg-primary/80 transition-colors duration-300"
                     >
                         {t('contactUs')}
                     </button>

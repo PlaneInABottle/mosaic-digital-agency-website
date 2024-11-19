@@ -148,26 +148,25 @@
     }
     [data-theme='sunset'] {
         /* Sunset Theme: Warm oranges and deep purples */
-        --background: #fff7ed;
-        --foreground: #7c2d12;
-        --card: #ffffff;
-        --card-foreground: #7c2d12;
-        --popover: #ffffff;
-        --popover-foreground: #7c2d12;
-        --primary: #c2410c;
-        --primary-rgb: 194, 65, 12;
-        --primary-foreground: #ffffff;
-        --secondary: #ea580c;
-        --secondary-foreground: #ffffff;
-        --muted: #ffedd5;
-        --muted-foreground: #9a3412;
-        --accent: #f97316;
-        --accent-foreground: #ffffff;
-        --destructive: #be123c;
-        --destructive-foreground: #ffffff;
-        --border: #fed7aa;
-        --input: #fed7aa;
-        --ring: #c2410c;
+        --background: 255, 247, 237; /* #fff7ed */
+        --foreground: 124, 45, 18; /* #7c2d12 */
+        --card: 255, 255, 255; /* #ffffff */
+        --card-foreground: 124, 45, 18; /* #7c2d12 */
+        --popover: 255, 255, 255; /* #ffffff */
+        --popover-foreground: 124, 45, 18; /* #7c2d12 */
+        --primary: 194, 65, 12; /* #c2410c */
+        --primary-foreground: 255, 255, 255; /* #ffffff */
+        --secondary: 234, 88, 12; /* #ea580c */
+        --secondary-foreground: 255, 255, 255; /* #ffffff */
+        --muted: 255, 237, 213; /* #ffedd5 */
+        --muted-foreground: 154, 52, 18; /* #9a3412 */
+        --accent: 249, 115, 22; /* #f97316 */
+        --accent-foreground: 255, 255, 255; /* #ffffff */
+        --destructive: 190, 18, 60; /* #be123c */
+        --destructive-foreground: 255, 255, 255; /* #ffffff */
+        --border: 254, 215, 170; /* #fed7aa */
+        --input: 254, 215, 170; /* #fed7aa */
+        --ring: 194, 65, 12; /* #c2410c */
     }
     [data-theme='ocean'] {
         /* Ocean Theme: Cool blues and teals */

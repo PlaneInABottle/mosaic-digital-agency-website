@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import LocaleSwitcher from '../LocaleSwitcher';
 import ThemeSwitcher from '../ThemeSwitcher';
 import MobileMenu from './MobileMenu';
 import NavigationLink from './NavigationLink';
@@ -28,21 +27,23 @@ export default function Navigation() {
     return (
         <div
             className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-                !isHomePage || scrolled ? 'bg-primary shadow-md' : 'bg-transparent'
+                !isHomePage || scrolled
+                    ? 'bg-background/10 backdrop-blur-md  shadow-md'
+                    : 'bg-transparent'
             }`}
         >
-            <nav className="container flex justify-between p-4 text-white">
+            <nav className="container flex justify-between p-4">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <NavigationLink href="/" className="text-xl font-semibold">
-                        Fitness GYM
+                    <NavigationLink href="/" className="text-3xl font-semibold tracking-tight">
+                        Mosaic Digital Agency
                     </NavigationLink>
                 </div>
 
                 {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center space-x-6">
+                <div className="hidden lg:flex items-center space-x-1">
                     {navigationLinks.map((link) => (
-                        <NavigationLink key={link.href} href={link.href}>
+                        <NavigationLink key={link.href} href={link.href} className="text-lg">
                             {t(link.translationKey)}
                         </NavigationLink>
                     ))}
@@ -50,7 +51,7 @@ export default function Navigation() {
 
                 {/* Right Side Items */}
                 <div className="flex items-center gap-4">
-                    <LocaleSwitcher />
+                    {/* <LocaleSwitcher /> */}
                     <ThemeSwitcher />
                     <MobileMenu scrolled={scrolled} isHomePage={isHomePage} />
                 </div>

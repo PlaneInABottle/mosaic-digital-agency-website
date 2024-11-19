@@ -44,7 +44,7 @@ export default function Hero() {
                         <Button
                             asChild
                             size="lg"
-                            className="text-base relative overflow-hidden group bg-primary hover:bg-primary-rgba/90"
+                            className="text-base relative overflow-hidden group bg-primary hover:bg-primary/90"
                         >
                             <Link href="#contact">
                                 <span className="relative z-10 flex items-center">
@@ -58,7 +58,7 @@ export default function Hero() {
                             asChild
                             size="lg"
                             variant="outline"
-                            className="bg-transparent text-base relative overflow-hidden group border-white text-white hover:text-white hover:border-primary hover:bg-primary-rgba/20"
+                            className="bg-transparent text-base relative overflow-hidden group border-white text-white hover:text-white hover:border-primary hover:bg-primary/20"
                         >
                             <Link href="#services">{t('learnMore')}</Link>
                         </Button>

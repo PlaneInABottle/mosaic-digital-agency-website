@@ -66,7 +66,7 @@ export default function MobileMenu({
             {/* Hamburger Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white p-2"
+                className="text-accent p-2"
                 aria-label="Toggle menu"
             >
                 <svg
@@ -95,7 +95,9 @@ export default function MobileMenu({
                         exit="closed"
                         variants={menuVariants}
                         className={`absolute top-full left-0 right-0 bg-primary shadow-lg transition-[background-color,box-shadow] duration-300 ${
-                            !isHomePage || scrolled ? 'bg-primary shadow-md' : 'bg-transparent'
+                            !isHomePage || scrolled
+                                ? 'bg-background/10 backdrop-blur-md  shadow-md'
+                                : 'bg-transparent'
                         }`}
                     >
                         <motion.div variants={containerVariants} className="flex flex-col p-4">

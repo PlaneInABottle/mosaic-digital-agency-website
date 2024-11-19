@@ -91,7 +91,7 @@ export default function WhyChooseUs() {
                             <Button
                                 asChild
                                 size="lg"
-                                className="transition-colors hover:bg-primary-rgba/80 "
+                                className="transition-colors hover:bg-primary/80 "
                             >
                                 <Link href="/about">
                                     {t('learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
