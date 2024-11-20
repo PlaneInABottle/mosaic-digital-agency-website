@@ -149,7 +149,13 @@
             "about": {
                 "topper": "HAKKIMIZDA",
                 "title": "Mükemmeliyetçi Yaklaşım, Kusursuz Sonuçlar",
-                "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği'nden mezun olduktan sonra, web tasarımı ve kodlama tutkumu takip ederek yoluma devam ettim. Modern ve yenilikçi web çözümleri üretme konusundaki tutkum, mükemmeliyetçi yaklaşımımla birleşiyor. Her projede en son teknolojileri kullanarak, minimal ve etkileyici tasarımlarla kusursuz kullanıcı deneyimleri yaratıyorum. Mozaik Dijital Ajansı, modern ve özgün tasarımıyla bu yaklaşımımın bir yansıması niteliğindedir.",
+                "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği'nden mezun olduktan sonra, web tasarımı ve kodlama tutkumu takip ederek yoluma devam ettim. Modern ve yenilikçi web çözümleri üretme konusundaki tutkum, mükemmeliyetçi yaklaşımımla birleşiyor. Her projede en son teknolojileri kullanarak, minimal ve etkileyici tasarımlarla kusursuz kullanıcı deneyimleri yaratıyorum.",
+                "vision": "Mosaic Digital Agency olarak, dijital dünyada iz bırakan, yenilikçi ve sürdürülebilir çözümler üretmeyi hedefliyoruz. Her müşterimizin benzersiz ihtiyaçlarını anlayarak, onlara özel stratejiler geliştiriyoruz.",
+                "mission": "Misyonumuz, işletmelerin dijital varlıklarını güçlendirmek ve onları gelecekte de başarılı kılacak teknolojik altyapıyla donatmaktır.",
+                "company": {
+                    "title": "Neden Mosaic Digital?",
+                    "description": "2023 yılında kurulan Mosaic Digital Agency, modern web teknolojilerini kullanarak işletmelerin dijital dönüşümüne öncülük ediyor. Genç ve dinamik ekibimizle, her projede en son teknolojileri kullanarak müşterilerimize rekabet avantajı sağlıyoruz."
+                },
                 "stats": {
                     "education": {
                         "value": "ODTÜ",
@@ -166,6 +172,48 @@
                     "innovation": {
                         "value": "Yenilikçi",
                         "label": "Çözümler"
+                    }
+                },
+                "expertise": {
+                    "title": "Uzmanlık Alanlarımız",
+                    "areas": {
+                        "web": {
+                            "title": "Modern Web Geliştirme",
+                            "description": "Next.js, React ve TypeScript ile yüksek performanslı web uygulamaları"
+                        },
+                        "design": {
+                            "title": "UI/UX Tasarım",
+                            "description": "Kullanıcı odaklı, modern ve etkileyici arayüz tasarımları"
+                        },
+                        "optimization": {
+                            "title": "SEO & Performans",
+                            "description": "Google standartlarına uygun optimizasyon ve yüksek performans"
+                        },
+                        "maintenance": {
+                            "title": "Bakım & Destek",
+                            "description": "Sürekli teknik destek ve düzenli bakım hizmetleri"
+                        }
+                    }
+                },
+                "values": {
+                    "title": "Değerlerimiz",
+                    "list": {
+                        "innovation": {
+                            "title": "Yenilikçilik",
+                            "description": "Sürekli gelişen teknolojileri takip eder ve uygularız"
+                        },
+                        "quality": {
+                            "title": "Kalite",
+                            "description": "Her projede en yüksek kalite standartlarını hedefleriz"
+                        },
+                        "transparency": {
+                            "title": "Şeffaflık",
+                            "description": "Müşterilerimizle açık ve dürüst iletişim kurarız"
+                        },
+                        "reliability": {
+                            "title": "Güvenilirlik",
+                            "description": "Verdiğimiz sözleri tutar, zamanında teslim ederiz"
+                        }
                     }
                 }
             },
