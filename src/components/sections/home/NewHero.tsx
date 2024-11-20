@@ -3,9 +3,9 @@
 import ParallaxImg from '@/components/animation/ParallaxImg';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 export default function NewHero() {
-    // const t = useTranslations('pages.home.hero');
+    const t = useTranslations('pages.home.hero');
 
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
@@ -25,35 +25,35 @@ export default function NewHero() {
                 start="10%"
                 end="80%"
                 src="/images/zoom-parallax/1.jpeg"
-                alt="hero"
+                alt={t('imageAlt')}
                 className="ml-8 h-96 w-1/2 md:w-1/3"
             />{' '}
             <ParallaxImg
                 start="30%"
                 end="20%"
                 src="/images/zoom-parallax/5.jpg"
-                alt="hero"
+                alt={t('imageAlt')}
                 className="mx-auto h-96 w-1/2 md:w-auto"
             />{' '}
             <ParallaxImg
                 start="80%"
                 end="-30%"
                 src="/images/zoom-parallax/3.jpg"
-                alt="hero"
+                alt={t('imageAlt')}
                 className="ml-auto h-96 w-1/2 md:w-1/3"
             />
             <ParallaxImg
                 start="-120%"
                 end="-0%"
                 src="/images/zoom-parallax/7.jpeg"
-                alt="hero"
+                alt={t('imageAlt')}
                 className="mr-auto h-96 w-1/2 md:w-1/3"
             />
             <h1 className="relative text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
-                FARK
+                {t('firstWord')}
             </h1>
             <h1 className="relative mt-[20vh] text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
-                YARAT
+                {t('secondWord')}
             </h1>
             <div className="absolute inset-x-0 bottom-0 h-screen bg-gradient-to-t from-black to-transparent" />
         </div>

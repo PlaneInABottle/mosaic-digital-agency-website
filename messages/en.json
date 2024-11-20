@@ -90,7 +90,10 @@
                 "casesWon": "Cases Successfully Resolved",
                 "scrollToExplore": "Scroll to explore",
                 "contactUs": "Join Us",
-                "learnMore": "Our Services"
+                "learnMore": "Our Services",
+                "firstWord": "MAKE",
+                "secondWord": "IMPACT",
+                "imageAlt": "Mosaic Digital Agency Hero Image"
             },
             "services": {
                 "ourServices": "Our Services",
