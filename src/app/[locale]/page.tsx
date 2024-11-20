@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import PageLayout from '@/components/layout/PageLayout';
 import dynamic from 'next/dynamic';
 import NewHero from '@/components/sections/home/NewHero';
-
+import { ReactLenis } from 'lenis/react';
 // Dynamic imports
 const TextParallax = dynamic(() => import('@/components/sections/home/TextParallax'), {
     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
@@ -35,11 +35,13 @@ export async function generateMetadata() {
 export default function Home() {
     return (
         <PageLayout fullWidth noHero pageTitle="home.hero" noPadding>
-            <NewHero />
-            <TextParallax />
-            <About />
-            <ZoomParallax />
-            <Contact />
+            <ReactLenis root>
+                <NewHero />
+                <TextParallax />
+                <About />
+                <ZoomParallax />
+                <Contact />
+            </ReactLenis>
         </PageLayout>
     );
 }
