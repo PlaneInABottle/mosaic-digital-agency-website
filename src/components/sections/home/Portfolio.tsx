@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 // import { motion } from 'framer-motion';
 import Image from 'next/image';
 // import { ArrowUpRight } from 'lucide-react';
@@ -37,36 +36,60 @@ import Image from 'next/image';
 // ];
 
 export default function Portfolio() {
-    const t = useTranslations('pages.home.portfolio');
 
     return (
-        <section id="portfolio" className="relative px-[10vw]">
+        <section id="portfolio" className="relative bg-black">
             <div
-                className="container relative h-[50vh]"
+                className="relative h-screen"
                 style={{
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
                 }}
             >
-                <h2 className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center text-4xl font-bold text-white">
-                    LET&apos;S GO AMI
+                <h2
+                    className="fixed left-1/2 top-1/2 z-10 flex h-1/3 w-2/3 items-center justify-center bg-red-400 bg-opacity-50 text-4xl font-bold tracking-[1rem] md:h-1/2 md:text-[14rem]"
+                    style={{
+                        textShadow: `
+                            2px 2px 0 #ffffff,
+                            4px 4px 0 #f0f0f0,
+                            6px 6px 0 #e0e0e0,
+                            10px 10px 20px rgba(0, 0, 0, 0.8)
+                        `,
+                        transform:
+                            ' perspective(10rem) translateX(-60%) translateY(-50%) rotateX(4deg) rotateY(-4deg) skew(1deg)',
+                    }}
+                >
+                    DİJİTAL
                 </h2>
                 <div className="fixed left-0 top-0 h-full w-full">
                     <Image
                         src="/images/portfolio/lawyer.png"
                         alt="Portfolio"
                         fill
-                        className="object-cover"
+                        className="object-cover opacity-40"
                     />
                 </div>
             </div>
             <div
-                className="container relative h-[50vh]"
+                className="relative h-screen"
                 style={{
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
                 }}
             >
-                <h2 className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center text-4xl font-bold text-white">
-                    {t('title')}
+                <h2
+                    className="fixed right-1/2 top-1/2 z-10 flex h-1/3 w-3/4 items-center justify-center bg-orange-400 bg-opacity-50 text-4xl font-bold tracking-[1rem] md:h-1/2 md:text-[14rem]"
+                    style={{
+                        textShadow: `
+                            2px 2px 0 #ffffff,
+                            4px 4px 0 #f0f0f0,
+                            6px 6px 0 #e0e0e0,
+                            10px 10px 20px rgba(0, 0, 0, 0.8)
+                        `,
+                        // transform: 'perspective(300px) rotateX(10deg) rotateY(-10deg) skew(1deg)',
+                        transform:
+                            ' perspective(10rem) translateX(60%) translateY(-50%) rotateY(4deg) rotateX(4deg) ',
+                    }}
+                >
+                    DÜNYA&apos;DA
                 </h2>
                 <div className="fixed left-0 top-0 h-full w-full">
                     <Image
@@ -78,17 +101,60 @@ export default function Portfolio() {
                 </div>
             </div>
             <div
-                className="container relative h-[50vh]"
+                className="relative h-screen"
                 style={{
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
                 }}
             >
-                <h2 className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center text-4xl font-bold text-white">
-                    {t('title')}
+                <h2
+                    className="fixed left-1/2 top-1/2 z-10 flex h-1/3 w-2/3 items-center justify-center bg-green-400 bg-opacity-50 text-4xl font-bold tracking-[1rem] md:h-1/2 md:text-[14rem]"
+                    style={{
+                        textShadow: `
+                            2px 2px 0 #ffffff,
+                            4px 4px 0 #f0f0f0,
+                            6px 6px 0 #e0e0e0,
+                            10px 10px 20px rgba(0, 0, 0, 0.8)
+                        `,
+                        transform:
+                            ' perspective(10rem) translateX(-60%) translateY(-50%) rotateX(4deg) rotateY(-4deg) skew(1deg)',
+                    }}
+                >
+                    FARK
                 </h2>
                 <div className="fixed left-0 top-0 h-full w-full">
                     <Image
                         src="/images/portfolio/lawyer.png"
+                        alt="Portfolio"
+                        fill
+                        className="object-cover opacity-40"
+                    />
+                </div>
+            </div>
+            <div
+                className="relative h-screen"
+                style={{
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                }}
+            >
+                <h2
+                    className="fixed left-1/2 top-1/2 z-10 flex h-1/3 w-2/3 items-center justify-center bg-blue-400 bg-opacity-50 text-4xl font-bold tracking-[1rem] md:h-1/2 md:text-[14rem]"
+                    style={{
+                        textShadow: `
+                            2px 2px 0 #ffffff,
+                            4px 4px 0 #f0f0f0,
+                            6px 6px 0 #e0e0e0,
+                            10px 10px 20px rgba(0, 0, 0, 0.8)
+                        `,
+                        // transform: 'perspective(300px) rotateX(10deg) rotateY(-10deg) skew(1deg)',
+                        transform:
+                            ' perspective(10rem) translateX(-50%) translateY(-50%) rotateY(4deg) rotateX(4deg) ',
+                    }}
+                >
+                    YARAT
+                </h2>
+                <div className="fixed left-0 top-0 h-full w-full">
+                    <Image
+                        src="https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg"
                         alt="Portfolio"
                         fill
                         className="object-cover"

@@ -19,14 +19,14 @@ export default function MobileMenu({
     const menuVariants = {
         closed: {
             opacity: 0,
-            y: -20,
+            height: 0,
             transition: {
                 duration: 0.2,
             },
         },
         open: {
             opacity: 1,
-            y: 0,
+            height: 'auto',
             transition: {
                 duration: 0.2,
             },
@@ -36,11 +36,11 @@ export default function MobileMenu({
     const linkVariants = {
         closed: {
             opacity: 0,
-            x: -20,
+            y: -4,
         },
         open: {
             opacity: 1,
-            x: 0,
+            y: 0,
             transition: {
                 duration: 0.2,
             },
@@ -66,15 +66,15 @@ export default function MobileMenu({
             {/* Hamburger Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-accent p-2"
+                className="p-2 text-foreground transition-colors hover:text-muted-foreground"
                 aria-label="Toggle menu"
             >
                 <svg
-                    className="w-6 h-6"
+                    className="h-5 w-5"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                 >
@@ -94,18 +94,19 @@ export default function MobileMenu({
                         animate="open"
                         exit="closed"
                         variants={menuVariants}
-                        className={`absolute top-full left-0 right-0 bg-primary shadow-lg transition-[background-color,box-shadow] duration-300 ${
+                        className={`absolute left-0 right-0 top-full overflow-hidden border-b border-border ${
                             !isHomePage || scrolled
-                                ? 'bg-background/10 backdrop-blur-md  shadow-md'
-                                : 'bg-transparent'
+                                ? 'bg-background/80 backdrop-blur-sm'
+                                : 'bg-background/80 backdrop-blur-sm'
                         }`}
                     >
-                        <motion.div variants={containerVariants} className="flex flex-col p-4">
+                        <motion.div variants={containerVariants} className="flex flex-col py-4">
                             {navigationLinks.map((link) => (
                                 <motion.div key={link.href} variants={linkVariants}>
                                     <NavigationLink
                                         onClick={() => setIsOpen(false)}
                                         href={link.href}
+                                        className="w-full px-8 py-2 text-muted-foreground transition-colors hover:text-foreground"
                                     >
                                         {t(link.translationKey)}
                                     </NavigationLink>

@@ -3,7 +3,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Trophy, Users, Rocket, Target, Shield, Wrench } from 'lucide-react';
+import { GraduationCap, Code2, Trophy, Users, Rocket, Target, Wrench } from 'lucide-react';
 import Image from 'next/image';
 
 export default function About() {
@@ -142,7 +142,7 @@ export default function About() {
                 </motion.div>
 
                 {/* Panel 5: Values */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -166,7 +166,7 @@ export default function About() {
                             )
                         )}
                     </div>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );

@@ -2,17 +2,19 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import ThemeSwitcher from '../ThemeSwitcher';
 import MobileMenu from './MobileMenu';
 import NavigationLink from './NavigationLink';
 import { usePathname } from 'next/navigation';
 import { navigationLinks } from '@/data/navigation';
+import LocaleSwitcher from '../LocaleSwitcher';
+import { Phone } from 'lucide-react';
 
 export default function Navigation() {
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
     const isHomePage = pathname === '/' || pathname === '/en';
     const t = useTranslations('common.navigation');
+    const generalT = useTranslations('common.general');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,33 +28,56 @@ export default function Navigation() {
 
     return (
         <div
-            className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+            className={`fixed top-0 z-50 w-full transition-all duration-300 ${
                 !isHomePage || scrolled
-                    ? 'bg-background/10 backdrop-blur-md  shadow-md'
+                    ? 'border-b border-border bg-background/80 backdrop-blur-sm'
                     : 'bg-transparent'
             }`}
         >
-            <nav className="container flex justify-between p-4">
+            <nav className="container flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-center">
-                    <NavigationLink href="/" className="text-3xl font-semibold tracking-tight">
+                <div>
+                    <NavigationLink
+                        href="/"
+                        className="text-xl font-normal tracking-tight text-foreground hover:text-foreground"
+                    >
                         Mosaic Digital Agency
                     </NavigationLink>
                 </div>
 
                 {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center space-x-1">
+                <div className="hidden items-center space-x-8 lg:flex">
+                    {/* Phone Number */}
+                    <a
+                        href={`tel:${generalT('phone').replace(/\s/g, '')}`}
+                        className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        <Phone className="h-4 w-4" />
+                        <span>{generalT('phone')}</span>
+                    </a>
+
+                    {/* Navigation Links */}
                     {navigationLinks.map((link) => (
-                        <NavigationLink key={link.href} href={link.href} className="text-lg">
+                        <NavigationLink key={link.href} href={link.href}>
                             {t(link.translationKey)}
                         </NavigationLink>
                     ))}
+
+                    {/* Language Switcher */}
+                    <LocaleSwitcher />
                 </div>
 
-                {/* Right Side Items */}
-                <div className="flex items-center gap-4">
-                    {/* <LocaleSwitcher /> */}
-                    <ThemeSwitcher />
+                {/* Mobile Menu */}
+                <div className="flex items-center gap-4 lg:hidden">
+                    {/* Phone Number for Mobile */}
+                    <a
+                        href={`tel:${generalT('phone').replace(/\s/g, '')}`}
+                        className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        <Phone className="h-4 w-4" />
+                    </a>
+
+                    <LocaleSwitcher />
                     <MobileMenu scrolled={scrolled} isHomePage={isHomePage} />
                 </div>
             </nav>

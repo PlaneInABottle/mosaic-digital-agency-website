@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 // import { usePathname } from 'next/navigation';
 
@@ -44,98 +43,72 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="bg-card rounded-lg shadow-md overflow-hidden">
-            <div className="p-6">
-                <h2 className="text-2xl text-foreground font-semibold">{t('title')}</h2>
-                <p className="text-muted-foreground mt-2">{t('subtitle')}</p>
+        <div className="space-y-6">
+            <div className="space-y-2">
+                <h2 className="text-2xl font-medium">{t('title')}</h2>
+                <p className="text-muted-foreground">{t('subtitle')}</p>
             </div>
-            <div className="p-6">
-                <form
-                    name="contact"
-                    method="POST"
-                    data-netlify="true"
-                    onSubmit={handleSubmit}
-                    className="space-y-6"
-                    netlify-honeypot="bot-field"
+            <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                onSubmit={handleSubmit}
+                className="space-y-4"
+                netlify-honeypot="bot-field"
+            >
+                <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                    <label>
+                        Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                    </label>
+                </p>
+
+                <div className="space-y-4">
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder={t('firstName')}
+                        required
+                        className="w-full rounded-none border border-border bg-background px-4 py-2 focus:outline-none focus:ring-1 focus:ring-foreground"
+                    />
+
+                    <input
+                        type="phone"
+                        id="phone"
+                        name="phone"
+                        placeholder={t('phone')}
+                        required
+                        className="w-full rounded-none border border-border bg-background px-4 py-2 focus:outline-none focus:ring-1 focus:ring-foreground"
+                    />
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder={t('email')}
+                        required
+                        className="w-full rounded-none border border-border bg-background px-4 py-2 focus:outline-none focus:ring-1 focus:ring-foreground"
+                    />
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder={t('message')}
+                        required
+                        rows={4}
+                        className="w-full rounded-none border border-border bg-background px-4 py-2 focus:outline-none focus:ring-1 focus:ring-foreground"
+                    />
+                </div>
+
+                <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full border border-foreground bg-foreground px-6 py-3 text-background transition-colors duration-200 hover:bg-background hover:text-foreground"
                 >
-                    <input type="hidden" name="form-name" value="contact" />
-                    <p className="hidden">
-                        <label>
-                            Don&apos;t fill this out if you&apos;re human:{' '}
-                            <input name="bot-field" />
-                        </label>
-                    </p>
-
-                    <div className="grid sm:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                            <label htmlFor="firstName" className="text-sm font-medium">
-                                {t('firstName')}
-                            </label>
-                            <input
-                                type="text"
-                                id="firstName"
-                                name="firstName"
-                                required
-                                className="w-full px-3 py-2 border rounded-md bg-background"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label htmlFor="lastName" className="text-sm font-medium">
-                                {t('lastName')}
-                            </label>
-                            <input
-                                type="text"
-                                id="lastName"
-                                name="lastName"
-                                required
-                                className="w-full px-3 py-2 border rounded-md bg-background"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium">
-                            {t('email')}
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            className="w-full px-3 py-2 border rounded-md bg-background"
-                        />
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="phone" className="text-sm font-medium">
-                            {t('phone')}
-                        </label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            className="w-full px-3 py-2 border rounded-md bg-background"
-                        />
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium">
-                            {t('message')}
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows={4}
-                            className="w-full px-3 py-2 border rounded-md bg-background"
-                        />
-                    </div>
-
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                        {isSubmitting ? t('sending') : t('send')}
-                    </Button>
-                </form>
-            </div>
-        </section>
+                    {isSubmitting ? t('sending') : t('send')}
+                </button>
+            </form>
+        </div>
     );
 }

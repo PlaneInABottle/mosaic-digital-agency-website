@@ -14,7 +14,8 @@ export default function NavigationLink({ href, className, ...rest }: ComponentPr
         <Link
             aria-current={isActive ? 'page' : undefined}
             className={clsx(
-                'inline-block  px-4 py-2 rounded-md transition-colors font-bold text-accent hover:text-foreground hover:bg-muted',
+                'inline-block px-4 py-2 text-muted-foreground transition-colors hover:text-foreground',
+                'text-sm uppercase tracking-wider',
                 className
             )}
             href={href}

@@ -4,17 +4,17 @@ import PageLayout from '@/components/layout/PageLayout';
 import dynamic from 'next/dynamic';
 import NewHero from '@/components/sections/home/NewHero';
 import TextParallax from '@/components/sections/home/TextParallax';
-
+import ZoomParallax from '@/components/sections/home/ZoomParallax';
 // Dynamic imports with loading fallbacks
 // const Services = dynamic(() => import('@/components/sections/home/Services'), {
 //     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
 //     ssr: true,
 // });
 
-const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), {
-    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
-    ssr: true,
-});
+// const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), {
+//     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
+//     ssr: true,
+// });
 
 const About = dynamic(() => import('@/components/sections/home/About'), {
     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
@@ -43,7 +43,8 @@ export default function Home() {
             {/* <Services /> */}
             {/* background wrapper */}
             <About />
-            <Portfolio />
+            {/* <Portfolio /> */}
+            <ZoomParallax />
             <Contact />
         </PageLayout>
     );
