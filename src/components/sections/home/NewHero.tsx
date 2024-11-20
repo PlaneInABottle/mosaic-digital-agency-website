@@ -26,28 +26,28 @@ export default function NewHero() {
                 <ParallaxImg
                     start="10%"
                     end="80%"
-                    src="/images/test.jpeg"
+                    src="/images/zoom-parallax/1.jpeg"
                     alt="hero"
                     className="ml-8 h-96 w-1/2 md:w-1/3"
                 />{' '}
                 <ParallaxImg
                     start="30%"
                     end="20%"
-                    src="/images/test.jpeg"
+                    src="/images/zoom-parallax/5.jpg"
                     alt="hero"
                     className="mx-auto h-96 w-1/2 md:w-auto"
                 />{' '}
                 <ParallaxImg
                     start="80%"
                     end="-30%"
-                    src="/images/test.jpeg"
+                    src="/images/zoom-parallax/3.jpg"
                     alt="hero"
                     className="ml-auto h-96 w-1/2 md:w-1/3"
                 />
                 <ParallaxImg
                     start="-120%"
                     end="-0%"
-                    src="/images/test.jpeg"
+                    src="/images/zoom-parallax/7.jpeg"
                     alt="hero"
                     className="mr-auto h-96 w-1/2 md:w-1/3"
                 />
