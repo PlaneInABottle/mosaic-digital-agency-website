@@ -13,7 +13,7 @@ export default function NewHero() {
         target: ref,
         offset: ['start start', 'end start'],
     });
-    const clipPath = useTransform(scrollYProgress, [0, 1], ['circle(10%)', 'circle(100%)']);
+    const clipPath = useTransform(scrollYProgress, [0, 1], ['circle(5%)', 'circle(100%)']);
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
     const scale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
     return (
