@@ -6,10 +6,10 @@ import NewHero from '@/components/sections/home/NewHero';
 import TextParallax from '@/components/sections/home/TextParallax';
 
 // Dynamic imports with loading fallbacks
-const Services = dynamic(() => import('@/components/sections/home/Services'), {
-    loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
-    ssr: true,
-});
+// const Services = dynamic(() => import('@/components/sections/home/Services'), {
+//     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
+//     ssr: true,
+// });
 
 const Portfolio = dynamic(() => import('@/components/sections/home/Portfolio'), {
     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
@@ -40,7 +40,7 @@ export default function Home() {
             {/* <Hero /> */}
             <NewHero />
             <TextParallax />
-            <Services />
+            {/* <Services /> */}
             {/* background wrapper */}
             <About />
             <Portfolio />

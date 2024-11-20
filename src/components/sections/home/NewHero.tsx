@@ -1,10 +1,9 @@
 'use client';
 
 import ParallaxImg from '@/components/animation/ParallaxImg';
-import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion';
-import { ReactLenis } from 'lenis/dist/lenis-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-
+import { ReactLenis } from 'lenis/react';
 // import { useTranslations } from 'next-intl';
 export default function NewHero() {
     // const t = useTranslations('pages.home.hero');
