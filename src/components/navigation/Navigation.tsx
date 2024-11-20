@@ -39,7 +39,7 @@ export default function Navigation() {
                 <div>
                     <NavigationLink
                         href="/"
-                        className="text-xl font-normal tracking-tight text-foreground hover:text-foreground"
+                        className="text-xs font-normal tracking-tight text-foreground hover:text-foreground md:text-xl"
                     >
                         Mosaic Digital Agency
                     </NavigationLink>

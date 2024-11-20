@@ -24,7 +24,7 @@ export default function LocaleSwitcher() {
 
     return (
         <button
-            className={`text-sm text-muted-foreground transition-colors hover:text-foreground ${
+            className={`text-xs text-muted-foreground transition-colors hover:text-foreground md:text-sm ${
                 isPending ? 'opacity-50' : ''
             }`}
             disabled={isPending}
