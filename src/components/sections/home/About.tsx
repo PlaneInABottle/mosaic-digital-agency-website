@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useTranslations } from 'next-intl';
@@ -123,6 +124,7 @@ export default function About() {
                     <h3 className="mb-8 text-2xl font-bold text-white">{t('expertise.title')}</h3>
                     <div className="grid gap-8 md:grid-cols-2">
                         {Object.entries(t.raw('expertise.areas')).map(
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
                             ([key, area]: [string, any]) => (
                                 <div
                                     key={key}
@@ -148,16 +150,21 @@ export default function About() {
                 >
                     <h3 className="mb-8 text-2xl font-bold text-white">{t('values.title')}</h3>
                     <div className="grid gap-8 md:grid-cols-2">
-                        {Object.entries(t.raw('values.list')).map(([key, value]: [string, any]) => (
-                            <div
-                                key={key}
-                                className="rounded-lg border border-white/10 p-6 transition-colors hover:border-primary"
-                            >
-                                <Shield className="mb-4 h-8 w-8 text-primary" />
-                                <h4 className="mb-2 text-xl font-bold text-white">{value.title}</h4>
-                                <p className="text-muted-foreground">{value.description}</p>
-                            </div>
-                        ))}
+                        {Object.entries(t.raw('values.list')).map(
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                            ([key, value]: [string, any]) => (
+                                <div
+                                    key={key}
+                                    className="rounded-lg border border-white/10 p-6 transition-colors hover:border-primary"
+                                >
+                                    <Shield className="mb-4 h-8 w-8 text-primary" />
+                                    <h4 className="mb-2 text-xl font-bold text-white">
+                                        {value.title}
+                                    </h4>
+                                    <p className="text-muted-foreground">{value.description}</p>
+                                </div>
+                            )
+                        )}
                     </div>
                 </motion.div>
             </div>
