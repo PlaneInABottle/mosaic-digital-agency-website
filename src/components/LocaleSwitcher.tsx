@@ -3,7 +3,6 @@
 import { useLocale } from 'next-intl';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import { useTransition } from 'react';
-import { Locale } from '@/i18n/routing';
 
 export default function LocaleSwitcher() {
     const locale = useLocale();
