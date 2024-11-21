@@ -3,6 +3,7 @@ import PageLayout from '@/components/layout/PageLayout';
 import dynamic from 'next/dynamic';
 import NewHero from '@/components/sections/home/NewHero';
 import { ReactLenis } from 'lenis/react';
+import DNAParallax from '@/components/sections/home/DNAParallax';
 // Dynamic imports
 const TextParallax = dynamic(() => import('@/components/sections/home/TextParallax'), {
     loading: () => <div className="h-[400px] animate-pulse bg-muted" />,
@@ -38,6 +39,7 @@ export default function Home() {
             <ReactLenis root>
                 <NewHero />
                 <TextParallax />
+                <DNAParallax />
                 <About />
                 <ZoomParallax />
                 <Contact />
