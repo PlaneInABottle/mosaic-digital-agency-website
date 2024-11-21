@@ -16,7 +16,7 @@ export default function About() {
                 <span className="mb-6 text-4xl font-bold text-white">{t('topper')}</span>
                 <Image
                     src="/images/ben-png.png"
-                    alt="Ben"
+                    alt={t('imageAlt')}
                     width={560}
                     height={600}
                     className="rounded-2xl object-cover"
@@ -96,20 +96,20 @@ export default function About() {
                     <div className="space-y-6">
                         <div className="flex items-center gap-4">
                             <Rocket className="h-8 w-8 text-primary" />
-                            <h3 className="text-2xl font-bold text-white">Vizyon</h3>
+                            <h3 className="text-2xl font-bold text-white">{t('vision.title')}</h3>
                         </div>
                         <p className="text-lg leading-relaxed text-muted-foreground">
-                            {t('vision')}
+                            {t('vision.description')}
                         </p>
                     </div>
 
                     <div className="space-y-6">
                         <div className="flex items-center gap-4">
                             <Target className="h-8 w-8 text-primary" />
-                            <h3 className="text-2xl font-bold text-white">Misyon</h3>
+                            <h3 className="text-2xl font-bold text-white">{t('mission.title')}</h3>
                         </div>
                         <p className="text-lg leading-relaxed text-muted-foreground">
-                            {t('mission')}
+                            {t('mission.description')}
                         </p>
                     </div>
                 </motion.div>

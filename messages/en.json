@@ -189,6 +189,63 @@
                     "7": "Passion",
                     "8": "Progress"
                 }
+            },
+            "about": {
+                "topper": "ABOUT US",
+                "title": "Perfectionist Approach, Flawless Results",
+                "description": "After graduating from Middle East Technical University (METU) Computer Engineering, I continued my journey following my passion for web design and coding. My passion for producing modern and innovative web solutions combines with my perfectionist approach. In every project, I create perfect user experiences with minimal and impressive designs using the latest technologies.",
+                "company": {
+                    "title": "Why Mosaic Digital?",
+                    "description": "Founded in 2023, Mosaic Digital Agency leads businesses' digital transformation using modern web technologies. With our young and dynamic team, we provide competitive advantage to our clients by using the latest technologies in every project."
+                },
+                "vision": {
+                    "title": "Vision",
+                    "description": "At Mosaic Digital Agency, we aim to create innovative and sustainable solutions that leave a mark in the digital world. By understanding the unique needs of each client, we develop customized strategies for them."
+                },
+                "mission": {
+                    "title": "Mission",
+                    "description": "Our mission is to strengthen businesses' digital presence and equip them with the technological infrastructure that will make them successful in the future."
+                },
+                "stats": {
+                    "education": {
+                        "value": "METU",
+                        "label": "Computer Engineering"
+                    },
+                    "approach": {
+                        "value": "Minimal",
+                        "label": "Design Approach"
+                    },
+                    "focus": {
+                        "value": "100%",
+                        "label": "Client Satisfaction"
+                    },
+                    "innovation": {
+                        "value": "Innovative",
+                        "label": "Solutions"
+                    }
+                },
+                "expertise": {
+                    "title": "Our Expertise",
+                    "areas": {
+                        "web": {
+                            "title": "Modern Web Development",
+                            "description": "High-performance web applications with Next.js, React, and TypeScript"
+                        },
+                        "design": {
+                            "title": "UI/UX Design",
+                            "description": "User-focused, modern, and impressive interface designs"
+                        },
+                        "optimization": {
+                            "title": "SEO & Performance",
+                            "description": "Google standards-compliant optimization and high performance"
+                        },
+                        "maintenance": {
+                            "title": "Maintenance & Support",
+                            "description": "Continuous technical support and regular maintenance services"
+                        }
+                    }
+                },
+                "imageAlt": "Ben Altay - Founder of Mosaic Digital Agency"
             }
         },
         "about": {

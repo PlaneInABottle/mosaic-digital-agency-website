@@ -153,8 +153,14 @@
                 "topper": "HAKKIMIZDA",
                 "title": "Mükemmeliyetçi Yaklaşım, Kusursuz Sonuçlar",
                 "description": "Orta Doğu Teknik Üniversitesi (ODTÜ/METU) Bilgisayar Mühendisliği'nden mezun olduktan sonra, web tasarımı ve kodlama tutkumu takip ederek yoluma devam ettim. Modern ve yenilikçi web çözümleri üretme konusundaki tutkum, mükemmeliyetçi yaklaşımımla birleşiyor. Her projede en son teknolojileri kullanarak, minimal ve etkileyici tasarımlarla kusursuz kullanıcı deneyimleri yaratıyorum.",
-                "vision": "Mosaic Digital Agency olarak, dijital dünyada iz bırakan, yenilikçi ve sürdürülebilir çözümler üretmeyi hedefliyoruz. Her müşterimizin benzersiz ihtiyaçlarını anlayarak, onlara özel stratejiler geliştiriyoruz.",
-                "mission": "Misyonumuz, işletmelerin dijital varlıklarını güçlendirmek ve onları gelecekte de başarılı kılacak teknolojik altyapıyla donatmaktır.",
+                "vision": {
+                    "title": "Vizyon",
+                    "description": "Mosaic Digital Agency olarak, dijital dünyada iz bırakan, yenilikçi ve sürdürülebilir çözümler üretmeyi hedefliyoruz. Her müşterimizin benzersiz ihtiyaçlarını anlayarak, onlara özel stratejiler geliştiriyoruz."
+                },
+                "mission": {
+                    "title": "Misyon",
+                    "description": "Misyonumuz, işletmelerin dijital varlıklarını güçlendirmek ve onları gelecekte de başarılı kılacak teknolojik altyapıyla donatmaktır."
+                },
                 "company": {
                     "title": "Neden Mosaic Digital?",
                     "description": "2023 yılında kurulan Mosaic Digital Agency, modern web teknolojilerini kullanarak işletmelerin dijital dönüşümüne öncülük ediyor. Genç ve dinamik ekibimizle, her projede en son teknolojileri kullanarak müşterilerimize rekabet avantajı sağlıyoruz."
@@ -218,7 +224,8 @@
                             "description": "Verdiğimiz sözleri tutar, zamanında teslim ederiz"
                         }
                     }
-                }
+                },
+                "imageAlt": "Ben Altay - Mosaic Digital Agency Kurucusu"
             },
             "portfolio": {
                 "topper": "PORTFOLYO",
