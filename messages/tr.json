@@ -140,6 +140,7 @@
                     }
                 }
             },
+
             "contact": {
                 "title": "Bize Ulaşın",
                 "subtitle": "Projeniz hakkında bize bilgi verin, en kısa sürede size dönüş yapalım.",
@@ -241,8 +242,8 @@
                 "imageAlt": "Ben Altay - Mosaic Digital Agency Kurucusu"
             },
             "portfolio": {
-                "topper": "PORTFOLYO",
-                "title": "Başarılı Projelerimiz",
+                "topper": "Portfolyo",
+                "title": "Portfolyo",
                 "description": "Modern teknolojiler ve yaratıcı tasarımlarla hayata geçirdiğimiz projelerimizden örnekler.",
                 "viewAll": "Tüm Projeleri Görüntüle",
                 "projects": {

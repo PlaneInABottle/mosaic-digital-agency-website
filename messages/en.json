@@ -131,6 +131,12 @@
                     "learnMore": "Civil Litigation Details"
                 }
             },
+            "portfolio": {
+                "topper": "Portfolyo",
+                "title": "Portfolyo",
+                "description": "Examples from the projects we've implemented using modern technologies and creative designs.",
+                "viewAll": "View All Projects"
+            },
             "aboutFirm": {
                 "title": "A Legacy of Legal Excellence",
                 "subtitle": "Trusted legal counsel for over three decades, serving clients with integrity and dedication.",
