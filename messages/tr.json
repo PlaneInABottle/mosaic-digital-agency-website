@@ -31,12 +31,22 @@
             "services": "Hizmetlerimiz",
             "about": "Hakkımızda",
             "portfolio": "Portfolyo",
-            "contact": "İletişim"
+            "contact": "İletişim",
+            "toggleMenu": "Menüyü Aç/Kapat",
+            "callUs": "Bizi Arayın"
         },
         "general": {
             "email": "y.mirza.altay@gmail.com",
             "phone": "+90 553 145 45 60",
-            "address": "İstanbul, Türkiye"
+            "address": "İstanbul, Türkiye",
+            "companyName": "Mosaic Digital Agency",
+            "workingHours": "Pazartesi - Cuma: 09:00 - 18:00",
+            "socialMedia": {
+                "facebook": "Facebook'ta Bizi Takip Edin",
+                "twitter": "Twitter'da Bizi Takip Edin",
+                "instagram": "Instagram'da Bizi Takip Edin",
+                "linkedin": "LinkedIn'de Bizi Takip Edin"
+            }
         },
         "footer": {
             "description": "Modern ve yaratıcı dijital çözümler sunan öncü dijital ajansınız. Web tasarım, dijital pazarlama ve yazılım geliştirme alanlarında profesyonel hizmetler.",
@@ -45,6 +55,9 @@
             "privacyPolicy": "Gizlilik Politikası",
             "termsOfService": "Hizmet Şartları",
             "allRightsReserved": "Tüm hakları saklıdır",
+            "emailUs": "E-posta Gönder",
+            "callUs": "Bizi Arayın",
+            "followUs": "Bizi Takip Edin",
             "links": {
                 "home": "Ana Sayfa",
                 "services": "Hizmetler",
@@ -54,7 +67,7 @@
         },
         "localeSwitcher": {
             "label": "Dil Değiştir",
-            "locale": "{locale, select, en {🇺🇸 EN} tr {🇹 TR} other {Bilinmeyen}}"
+            "locale": "{locale, select, en {🇺🇸 EN} tr {🇹🇷 TR} other {Bilinmeyen}}"
         }
     },
     "pages": {
@@ -132,12 +145,12 @@
                 "subtitle": "Projeniz hakkında bize bilgi verin, en kısa sürede size dönüş yapalım.",
                 "form": {
                     "title": "Bize Mesaj Gönderin",
-                    "subtitle": "Projeniz hakkında bize bilgi verin, en kısa sürede size dönüş yapalım.",
-                    "firstName": "Ad",
-                    "lastName": "Soyad",
-                    "email": "E-posta",
-                    "phone": "Telefon",
-                    "message": "Mesaj",
+                    "subtitle": "Aşağıdaki formu doldurarak bize mesaj gönderebilirsiniz. En kısa sürede size dönüş yapacağız.",
+                    "firstName": "Adınız",
+                    "lastName": "Soyadınız",
+                    "email": "E-posta Adresiniz",
+                    "phone": "Telefon Numaranız",
+                    "message": "Mesajınız",
                     "send": "Gönder",
                     "sending": "Gönderiliyor..."
                 },

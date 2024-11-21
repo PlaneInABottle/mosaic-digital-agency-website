@@ -43,8 +43,8 @@ export default function NewHero() {
                 className="ml-auto h-96 w-1/2 md:w-1/3"
             />
             <ParallaxImg
-                start="-120%"
-                end="-0%"
+                start="40%"
+                end="-200%"
                 src="/images/zoom-parallax/7.jpeg"
                 alt={t('imageAlt')}
                 className="mr-auto h-96 w-1/2 md:w-1/3"

@@ -10,13 +10,13 @@ export default function ContactInfo() {
     const contactDetails = [
         {
             icon: Mail,
-            label: 'email',
+            label: t('emailTitle'),
             value: generalT('email'),
             href: `mailto:${generalT('email')}`,
         },
         {
             icon: Phone,
-            label: 'phone',
+            label: t('phoneTitle'),
             value: generalT('phone'),
             href: `tel:${generalT('phone').replace(/\s/g, '')}`,
         },
@@ -36,9 +36,12 @@ export default function ContactInfo() {
                         className="group flex items-center gap-4"
                     >
                         <detail.icon className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-foreground" />
-                        <span className="text-muted-foreground transition-colors group-hover:text-foreground">
-                            {detail.value}
-                        </span>
+                        <div className="flex flex-col">
+                            <span className="text-sm text-muted-foreground">{detail.label}</span>
+                            <span className="text-muted-foreground transition-colors group-hover:text-foreground">
+                                {detail.value}
+                            </span>
+                        </div>
                     </a>
                 ))}
             </div>

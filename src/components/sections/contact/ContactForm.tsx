@@ -2,14 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-// import { usePathname } from 'next/navigation';
 
 export default function ContactForm() {
     const t = useTranslations('pages.home.contact.form');
     const [isSubmitting, setIsSubmitting] = useState(false);
-    // const pathname = usePathname();
-
-    // const locale = pathname.split('/')[1]; // Get current locale from path
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -28,15 +24,14 @@ export default function ContactForm() {
 
             if (response.ok) {
                 form.reset();
-                alert('Thank you for your message. We will get back to you soon!');
+                alert(t('success'));
             } else {
                 throw new Error('Form submission failed');
             }
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (error) {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             console.log((error as any).message);
-            alert('Sorry, there was an error submitting the form. Please try again.');
+            alert(t('error'));
         } finally {
             setIsSubmitting(false);
         }

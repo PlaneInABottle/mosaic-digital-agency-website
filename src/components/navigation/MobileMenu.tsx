@@ -67,7 +67,7 @@ export default function MobileMenu({
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="p-2 text-foreground transition-colors hover:text-muted-foreground"
-                aria-label="Toggle menu"
+                aria-label={t('toggleMenu')}
             >
                 <svg
                     className="h-5 w-5"

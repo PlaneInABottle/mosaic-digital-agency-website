@@ -41,7 +41,7 @@ export default function Navigation() {
                         href="/"
                         className="text-xs font-normal tracking-tight text-foreground hover:text-foreground md:text-xl"
                     >
-                        Mosaic Digital Agency
+                        {generalT('companyName')}
                     </NavigationLink>
                 </div>
 
@@ -51,6 +51,7 @@ export default function Navigation() {
                     <a
                         href={`tel:${generalT('phone').replace(/\s/g, '')}`}
                         className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        aria-label={t('callUs')}
                     >
                         <Phone className="h-4 w-4" />
                         <span>{generalT('phone')}</span>
@@ -63,16 +64,15 @@ export default function Navigation() {
                         </NavigationLink>
                     ))}
 
-                    {/* Language Switcher */}
                     <LocaleSwitcher />
                 </div>
 
                 {/* Mobile Menu */}
                 <div className="flex items-center gap-4 lg:hidden">
-                    {/* Phone Number for Mobile */}
                     <a
                         href={`tel:${generalT('phone').replace(/\s/g, '')}`}
                         className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
+                        aria-label={t('callUs')}
                     >
                         <Phone className="h-4 w-4" />
                     </a>
