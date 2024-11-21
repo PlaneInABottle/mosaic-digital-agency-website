@@ -267,6 +267,19 @@
                     "7": "Tutku",
                     "8": "Yenilik"
                 }
+            },
+            "zoomParallax": {
+                "title": "İletişim",
+                "imageAlt": "Mosaic Digital Agency Paralaks Görsel",
+                "images": {
+                    "1": "Modern web tasarım örneği 1",
+                    "2": "Yaratıcı dijital çözüm örneği 2",
+                    "3": "Kullanıcı deneyimi tasarımı 3",
+                    "4": "Web geliştirme projesi 4",
+                    "5": "Dijital pazarlama çalışması 5",
+                    "6": "UI/UX tasarım örneği 6",
+                    "7": "Responsive web tasarımı 7"
+                }
             }
         }
     }
