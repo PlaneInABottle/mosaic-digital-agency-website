@@ -75,7 +75,7 @@ export default function ZoomParallax() {
                     placeholder="blur"
                     className="object-cover"
                     priority={index < 2}
-                    loading={index < 2 ? 'eager' : 'eager'}
+                    loading={index < 2 ? 'eager' : 'lazy'}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     quality={75}
                 />
