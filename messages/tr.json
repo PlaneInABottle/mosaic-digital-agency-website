@@ -247,6 +247,19 @@
                         "description": "Minimal ve etkileyici portfolyo web sitesi"
                     }
                 }
+            },
+            "textParallax": {
+                "words": {
+                    "0": "Yaratıcılık",
+                    "1": "Vizyon",
+                    "2": "İnovasyon",
+                    "3": "Güven",
+                    "4": "Kalite",
+                    "5": "Deneyim",
+                    "6": "Başarı",
+                    "7": "Tutku",
+                    "8": "Yenilik"
+                }
             }
         }
     }

@@ -176,6 +176,19 @@
                 "title": "Transform Your Life Today",
                 "description": "Join our community of dedicated individuals who have already taken the first step towards their fitness goals. Let our expert trainers guide you on your journey to a healthier, stronger you.",
                 "cta": "Start Your Journey"
+            },
+            "textParallax": {
+                "words": {
+                    "0": "Creativity",
+                    "1": "Vision",
+                    "2": "Innovation",
+                    "3": "Trust",
+                    "4": "Quality",
+                    "5": "Experience",
+                    "6": "Success",
+                    "7": "Passion",
+                    "8": "Progress"
+                }
             }
         },
         "about": {
