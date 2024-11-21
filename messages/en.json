@@ -6,28 +6,190 @@
         "pages": {
             "home": {
                 "title": "Home | Mosaic Digital Agency",
-                "description": "Modern web solutions and creative digital experiences"
+                "description": "Leading digital agency providing modern and creative digital solutions"
             },
             "about": {
                 "title": "About Us | Mosaic Digital Agency",
-                "description": "Discover our story, values, and commitment to digital excellence"
+                "description": "Meet our team creating projects and creative solutions that make an impact in the digital world"
             },
             "services": {
                 "title": "Services | Mosaic Digital Agency",
-                "description": "Explore our comprehensive digital services and web solutions"
+                "description": "Explore our comprehensive legal services across various practice areas"
             },
-            "portfolio": {
-                "title": "Portfolio | Mosaic Digital Agency",
-                "description": "View our successful projects and digital transformations"
+            "team": {
+                "title": "Our Attorneys | Mosaic Digital Agency",
+                "description": "Meet our team of experienced legal professionals"
             },
             "contact": {
-                "title": "Contact | Mosaic Digital Agency",
-                "description": "Get in touch with our digital team"
+                "title": "Contact Us | Mosaic Digital Agency",
+                "description": "Get in touch with our legal team"
+            }
+        }
+    },
+    "common": {
+        "buttons": {
+            "contactUs": "Contact Us",
+            "learnMore": "Learn More",
+            "viewProfile": "View Profile",
+            "freeConsultation": "Free Consultation"
+        },
+        "navigation": {
+            "home": "Home",
+            "services": "Services",
+            "about": "About",
+            "portfolio": "Portfolio",
+            "contact": "Contact",
+            "toggleMenu": "Toggle Menu",
+            "callUs": "Call Us"
+        },
+        "footer": {
+            "description": "Leading digital agency providing modern and creative digital solutions. Professional services in web design, digital marketing, and software development.",
+            "contactUs": "Contact Us",
+            "quickLinks": "Quick Links",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service",
+            "allRightsReserved": "All rights reserved",
+            "emailUs": "Email Us",
+            "callUs": "Call Us",
+            "followUs": "Follow Us",
+            "links": {
+                "home": "Home",
+                "services": "Services",
+                "about": "About",
+                "contact": "Contact"
+            }
+        },
+        "localeSwitcher": {
+            "label": "Change Language",
+            "locale": "{locale, select, en {🇺🇸 EN} tr {🇹🇷 TR} other {Unknown}}"
+        },
+        "general": {
+            "email": "y.mirza.altay@gmail.com",
+            "phone": "+90 553 145 45 60",
+            "address": "Istanbul, Turkey",
+            "companyName": "Mosaic Digital Agency",
+            "workingHours": "Monday - Friday: 09:00 - 18:00",
+            "socialMedia": {
+                "facebook": "Follow us on Facebook",
+                "twitter": "Follow us on Twitter",
+                "instagram": "Follow us on Instagram",
+                "linkedin": "Follow us on LinkedIn"
             }
         }
     },
     "pages": {
         "home": {
+            "hero": {
+                "title": "You Can Boost Your Strength",
+                "subtitle": " Develop confidence, composure under pressure and the discipline needed to be a champ. This is the club you’ve been looking for. ",
+                "topper": "BEST GYM OF THE CITY FOR FITNESS",
+                "description": "Our team of experienced attorneys is dedicated to providing exceptional legal services with a commitment to integrity, excellence, and client success",
+                "contactButton": "Free Consultation",
+                "servicesButton": "Our Services",
+                "yearsExperience": "Years of Experience",
+                "casesWon": "Cases Successfully Resolved",
+                "scrollToExplore": "Scroll to explore",
+                "contactUs": "Join Us",
+                "learnMore": "Our Services",
+                "firstWord": "MAKE",
+                "secondWord": "IMPACT",
+                "imageAlt": "Mosaic Digital Agency Hero Image"
+            },
+            "services": {
+                "ourServices": "Our Services",
+                "title": "Let's Boost Your Strength",
+                "description": "Workouts shift your body from periods of aerobic activity to periods of the best training tools for developing a strong anaerobic activity. When your body is in and “aerobic mode,” your body is using oxygen. ",
+                "learnMore": "Learn More",
+                "corporate": {
+                    "title": "Corporate Law",
+                    "description": "Expert legal guidance for businesses, including formation, compliance, mergers, and acquisitions.",
+                    "learnMore": "Corporate Law"
+                },
+                "family": {
+                    "title": "Family Law",
+                    "description": "Compassionate representation in divorce, custody, and other family-related legal matters.",
+                    "learnMore": "Family Law Details"
+                },
+                "criminal": {
+                    "title": "Criminal Defense",
+                    "description": "Strong defense strategies and representation in criminal cases at both state and federal levels.",
+                    "learnMore": "Criminal Defense Details"
+                },
+                "realEstate": {
+                    "title": "Real Estate Law",
+                    "description": "Comprehensive legal services for real estate transactions, development, and disputes.",
+                    "learnMore": "Real Estate Law Details"
+                },
+                "intellectual": {
+                    "title": "Intellectual Property",
+                    "description": "Protection and enforcement of patents, trademarks, copyrights, and trade secrets.",
+                    "learnMore": "Intellectual Property Details"
+                },
+                "litigation": {
+                    "title": "Civil Litigation",
+                    "description": "Skilled representation in complex civil disputes and litigation proceedings.",
+                    "learnMore": "Civil Litigation Details"
+                }
+            },
+            "aboutFirm": {
+                "title": "A Legacy of Legal Excellence",
+                "subtitle": "Trusted legal counsel for over three decades, serving clients with integrity and dedication.",
+                "description": "Our firm combines deep legal expertise with a commitment to client service. We understand that each case is unique and requires personalized attention. Our team of experienced attorneys works tirelessly to achieve the best possible outcomes for our clients.",
+                "established": "1990",
+                "legacy": "Years of Legal Excellence",
+                "learnMore": "About Our Firm",
+                "stats": {
+                    "experience": {
+                        "value": "30+",
+                        "label": "Years Experience"
+                    },
+                    "clients": {
+                        "value": "1000+",
+                        "label": "Satisfied Clients"
+                    },
+                    "awards": {
+                        "value": "50+",
+                        "label": "Industry Awards"
+                    }
+                }
+            },
+            "testimonials": {
+                "title": "What Our Clients Say",
+                "subtitle": "Read testimonials from our valued clients about their experience with our legal services",
+                "testimonial1": {
+                    "name": "John Smith",
+                    "role": "Corporate Client",
+                    "content": "The team provided exceptional legal guidance throughout our corporate restructuring. Their expertise and professionalism made a complex process manageable."
+                },
+                "testimonial2": {
+                    "name": "Sarah Johnson",
+                    "role": "Family Law Client",
+                    "content": "During a difficult time, they showed both compassion and competence. Their dedication to my case brought the best possible outcome."
+                },
+                "testimonial3": {
+                    "name": "Michael Chen",
+                    "role": "Real Estate Developer",
+                    "content": "Their deep understanding of real estate law and attention to detail saved us from potential issues. Highly recommended for any property matters."
+                }
+            },
+            "parallax": {
+                "title": "Transform Your Life Today",
+                "description": "Join our community of dedicated individuals who have already taken the first step towards their fitness goals. Let our expert trainers guide you on your journey to a healthier, stronger you.",
+                "cta": "Start Your Journey"
+            },
+            "textParallax": {
+                "words": {
+                    "0": "Creativity",
+                    "1": "Vision",
+                    "2": "Innovation",
+                    "3": "Trust",
+                    "4": "Quality",
+                    "5": "Experience",
+                    "6": "Success",
+                    "7": "Passion",
+                    "8": "Progress"
+                }
+            },
             "about": {
                 "topper": "ABOUT US",
                 "title": "Perfectionist Approach, Flawless Results",
@@ -84,6 +246,300 @@
                     }
                 },
                 "imageAlt": "Ben Altay - Founder of Mosaic Digital Agency"
+            },
+            "zoomParallax": {
+                "title": "Contact",
+                "imageAlt": "Mosaic Digital Agency Parallax Image",
+                "images": {
+                    "1": "Modern web design example 1",
+                    "2": "Creative digital solution example 2",
+                    "3": "User experience design 3",
+                    "4": "Web development project 4",
+                    "5": "Digital marketing work 5",
+                    "6": "UI/UX design example 6",
+                    "7": "Responsive web design 7"
+                }
+            },
+            "contact": {
+                "form": {
+                    "title": "Send Us a Message",
+                    "subtitle": "Please fill out the form below to send us a message. We will get back to you as soon as possible.",
+                    "firstName": "Your Name",
+                    "lastName": "Last Name",
+                    "email": "Your Email",
+                    "phone": "Your Phone",
+                    "message": "Your Message",
+                    "send": "Send Message",
+                    "sending": "Sending...",
+                    "success": "Thank you for your message. We will get back to you soon!",
+                    "error": "Sorry, there was an error submitting the form. Please try again."
+                },
+                "info": {
+                    "title": "Contact Information",
+                    "subtitle": "Get in touch to discuss your projects. Reach out through the form or by contacting us directly.",
+                    "emailTitle": "Email",
+                    "phoneTitle": "Phone",
+                    "addressTitle": "Address",
+                    "hoursTitle": "Office Hours"
+                }
+            }
+        },
+        "about": {
+            "title": "A Legacy of Legal Excellence",
+            "subtitle": "Trusted legal counsel for over three decades, serving clients with integrity and dedication.",
+            "description": "Our firm combines deep legal expertise with a commitment to client service. We understand that each case is unique and requires personalized attention. Our team of experienced attorneys works tirelessly to achieve the best possible outcomes for our clients.",
+            "established": "1990",
+            "legacy": "Years of Legal Excellence",
+            "hero": {
+                "title": "About Us",
+                "subtitle": "Our Values, History, and Team",
+                "stats": {
+                    "years": "Years of Legal Excellence",
+                    "lawyers": "Attorneys",
+                    "cases": "Cases Successfully Resolved"
+                }
+            },
+            "values": {
+                "title": "Our Values",
+                "subtitle": "Core Principles that Guide Our Work",
+                "items": {
+                    "integrity": {
+                        "title": "Integrity",
+                        "description": "We are committed to the highest standards of professional conduct and ethical behavior."
+                    },
+                    "excellence": {
+                        "title": "Excellence",
+                        "description": "We strive for excellence in all aspects of our work, from the quality of our legal services to the professionalism of our team."
+                    },
+                    "clientFocus": {
+                        "title": "Client Focus",
+                        "description": "We are dedicated to achieving the best possible outcomes for our clients."
+                    },
+                    "community": {
+                        "title": "Community",
+                        "description": "We are committed to making a positive impact in our community through our legal services and our support of local organizations."
+                    }
+                }
+            },
+            "history": {
+                "title": "Our History",
+                "subtitle": "Milestones and Achievements",
+                "milestones": {
+                    "1998": "Firm established",
+                    "2005": "First major case win",
+                    "2012": "Expansion into new practice areas",
+                    "2018": "National recognition",
+                    "2023": "Firm celebrates 25 years of excellence"
+                }
+            },
+            "team": {
+                "title": "Our Team",
+                "subtitle": "Meet Our Experienced Attorneys",
+                "viewAll": "View All Attorneys",
+                "stats": {
+                    "offices": {
+                        "label": "Offices",
+                        "value": "3"
+                    },
+                    "lawyers": {
+                        "label": "Attorneys",
+                        "value": "25"
+                    },
+                    "experience": {
+                        "label": "Years of Experience",
+                        "value": "30+"
+                    },
+                    "success": {
+                        "label": "Cases Successfully Resolved",
+                        "value": "1000+"
+                    }
+                }
+            }
+        },
+        "services": {
+            "pageTitle": "Practice Areas | Law Firm",
+            "pageDescription": "Explore our comprehensive legal services across various practice areas.",
+            "title": "Our Practice Areas",
+            "description": "We offer comprehensive legal services across a wide range of practice areas. Our experienced attorneys are dedicated to providing exceptional legal representation tailored to your specific needs.",
+            "contactUs": "Contact Us",
+            "areas": {
+                "corporate": {
+                    "title": "Corporate Law",
+                    "description": "Comprehensive legal solutions for businesses of all sizes.",
+                    "learnMore": "Corporate Law",
+                    "services": {
+                        "formation": "Business Formation & Structuring",
+                        "compliance": "Regulatory Compliance",
+                        "mergers": "Mergers & Acquisitions",
+                        "contracts": "Contract Negotiation & Drafting",
+                        "governance": "Corporate Governance"
+                    },
+                    "serviceDescriptions": {
+                        "formation": "Comprehensive legal solutions for business formation and structuring.",
+                        "compliance": "Expert guidance on regulatory compliance and compliance issues.",
+                        "mergers": "Strategic advice and solutions for mergers and acquisitions.",
+                        "contracts": "Expert negotiation and drafting of contracts.",
+                        "governance": "Comprehensive corporate governance solutions."
+                    },
+                    "serviceFeatures": {
+                        "formation": {
+                            "1": "Comprehensive legal solutions for business formation and structuring.",
+                            "2": "Expert guidance on regulatory compliance and compliance issues.",
+                            "3": "Strategic advice and solutions for mergers and acquisitions."
+                        },
+                        "compliance": {
+                            "1": "Expert guidance on regulatory compliance and compliance issues.",
+                            "2": "Strategic advice and solutions for mergers and acquisitions.",
+                            "3": "Expert negotiation and drafting of contracts."
+                        },
+                        "mergers": {
+                            "1": "Strategic advice and solutions for mergers and acquisitions.",
+                            "2": "Expert negotiation and drafting of contracts.",
+                            "3": "Comprehensive corporate governance solutions."
+                        },
+                        "contracts": {
+                            "1": "Expert negotiation and drafting of contracts.",
+                            "2": "Comprehensive corporate governance solutions.",
+                            "3": "Strategic advice and solutions for mergers and acquisitions."
+                        },
+                        "governance": {
+                            "1": "Comprehensive corporate governance solutions.",
+                            "2": "Strategic advice and solutions for mergers and acquisitions.",
+                            "3": "Expert negotiation and drafting of contracts."
+                        }
+                    },
+                    "longDescription": "Our corporate law practice provides comprehensive legal solutions to businesses of all sizes, from startups to multinational corporations. We combine deep legal expertise with practical business acumen to deliver strategic advice and solutions that help our clients achieve their objectives."
+                },
+                "family": {
+                    "title": "Family Law",
+                    "description": "Compassionate legal support for family matters.",
+                    "learnMore": "Family Law",
+                    "services": {
+                        "divorce": "Divorce & Separation",
+                        "custody": "Child Custody & Visitation",
+                        "support": "Child & Spousal Support",
+                        "adoption": "Adoption Services",
+                        "mediation": "Family Mediation"
+                    }
+                },
+                "criminal": {
+                    "title": "Criminal Law",
+                    "description": "Strategic defense and representation in criminal matters.",
+                    "learnMore": "Criminal Law",
+                    "services": {
+                        "defense": "Criminal Defense",
+                        "appeals": "Criminal Appeals",
+                        "federal": "Federal Crime Defense",
+                        "state": "State Crime Defense",
+                        "investigation": "Criminal Investigation"
+                    }
+                },
+                "realEstate": {
+                    "title": "Real Estate Law",
+                    "description": "Expert guidance in all aspects of real estate law.",
+                    "learnMore": "Real Estate Law",
+                    "services": {
+                        "transactions": "Real Estate Transactions",
+                        "development": "Property Development",
+                        "disputes": "Real Estate Disputes",
+                        "leasing": "Commercial Leasing",
+                        "zoning": "Zoning & Land Use"
+                    }
+                },
+                "intellectual": {
+                    "title": "Intellectual Property",
+                    "description": "Expert guidance in all aspects of intellectual property law.",
+                    "learnMore": "Intellectual Property",
+                    "services": {
+                        "protection": "Intellectual Property Protection",
+                        "enforcement": "Intellectual Property Enforcement",
+                        "litigation": "Intellectual Property Litigation",
+                        "trademarks": "Trademark Registration & Protection",
+                        "copyrights": "Copyright Registration & Protection",
+                        "patents": "Patent Registration & Protection"
+                    }
+                },
+                "litigation": {
+                    "title": "Civil Litigation",
+                    "description": "Skilled representation in complex civil disputes and litigation proceedings.",
+                    "learnMore": "Civil Litigation",
+                    "services": {
+                        "litigation": "Civil Litigation",
+                        "disputes": "Dispute Resolution",
+                        "arbitration": "Arbitration & Mediation",
+                        "classActions": "Class Actions",
+                        "consumer": "Consumer Litigation"
+                    }
+                }
+            }
+        },
+        "team": {
+            "title": "Our Attorneys",
+            "subtitle": "Meet our team of experienced legal professionals dedicated to serving your needs",
+            "viewAll": "View All Attorneys",
+            "viewProfile": "View Profile",
+            "contact": "Contact",
+            "about": "About",
+            "expertise": "Areas of Expertise",
+            "sectionTitles": {
+                "specialties": "Practice Areas",
+                "education": "Education",
+                "barAdmissions": "Bar Admissions",
+                "languages": "Languages"
+            },
+            "roles": {
+                "seniorPartner": "Senior Partner",
+                "partner": "Partner",
+                "associate": "Associate"
+            },
+            "services": {
+                "corporate": "Corporate Law",
+                "mergers": "Mergers & Acquisitions",
+                "securities": "Securities Law",
+                "litigation": "Litigation",
+                "familyLaw": "Family Law",
+                "realEstate": "Real Estate Law",
+                "intellectual": "Intellectual Property"
+            },
+            "languages": {
+                "english": "English",
+                "turkish": "Turkish",
+                "arabic": "Arabic",
+                "french": "French",
+                "spanish": "Spanish"
+            },
+            "bios": {
+                "sarah-mitchell": "Sarah Mitchell is a seasoned corporate lawyer with over 20 years of experience. She specializes in mergers and acquisitions, securities law, and litigation. Sarah is known for her strategic approach and her ability to navigate complex legal landscapes."
+            },
+            "education": {
+                "harvard": "Harvard Law School",
+                "yale": "Yale Law School"
+            },
+            "barAdmissions": {
+                "newYork": "New York",
+                "california": "California"
+            }
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "We're here to help you on your fitness journey. Whether you're just starting out or an experienced athlete, we offer personalized programs to meet your specific needs. Our professional trainers, nutrition experts, and modern equipment are ready to help you achieve your goals.",
+            "info": {
+                "title": "Contact Us",
+                "subtitle": "We look forward to discussing your legal needs. Reach out to us through the form or by contacting our office directly.",
+                "emailTitle": "Email",
+                "phoneTitle": "Phone",
+                "addressTitle": "Address",
+                "hoursTitle": "Office Hours"
+            },
+            "form": {
+                "title": "Send Us a Message",
+                "subtitle": "Please fill out the form below to send us a message. We will get back to you as soon as possible.",
+                "firstName": "First Name",
+                "lastName": "Last Name",
+                "email": "Email",
+                "phone": "Phone",
+                "message": "Message",
+                "send": "Send"
             }
         }
     }
