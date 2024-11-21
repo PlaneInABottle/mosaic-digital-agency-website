@@ -7,17 +7,18 @@ import Picture5 from '/public/images/zoom-parallax/5.jpg';
 import Picture6 from '/public/images/zoom-parallax/6.jpg';
 import Picture7 from '/public/images/zoom-parallax/7.jpeg';
 import Image from 'next/image';
-import { useScroll, useTransform, motion } from 'framer-motion';
-import { useRef, useMemo } from 'react';
+import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
+import { useRef, useMemo, memo } from 'react';
 import { useTranslations } from 'next-intl';
 
-export default function Index() {
-    const container = useRef(null);
+export default function ZoomParallax() {
+    const container = useRef<HTMLDivElement>(null);
     const t = useTranslations('pages.home.zoomParallax');
 
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ['start start', 'end end'],
+        layoutEffect: true,
     });
 
     const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
@@ -58,29 +59,35 @@ export default function Index() {
         4: 'left-[5vw] top-[27.5vh] h-[25vh] w-[20vw]',
         5: '-left-[22.5vw] top-[27.5vh] h-[25vh] w-[30vw]',
         6: 'left-[25vw] top-[22.5vh] h-[15vh] w-[15vw]',
-    };
+    } as const;
+
+    // eslint-disable-next-line react/display-name
+    const ParallaxImage = memo(({ src, scale, alt, index }: ParallaxImageProps) => (
+        <motion.div
+            style={{ scale, willChange: 'transform' }}
+            className="absolute top-0 flex h-full w-full items-center justify-center"
+        >
+            <div className={`relative h-[25vh] w-[25vw] ${IMAGE_STYLES[index] || ''}`}>
+                <Image
+                    src={src}
+                    fill
+                    alt={alt}
+                    placeholder="blur"
+                    className="object-cover"
+                    priority={index < 2}
+                    loading={index < 2 ? 'eager' : 'lazy'}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={75}
+                />
+            </div>
+        </motion.div>
+    ));
 
     return (
         <div ref={container} className="relative h-[300vh]">
             <div className="sticky top-0 h-screen overflow-hidden">
                 {pictures.map(({ src, scale, alt }, index) => (
-                    <motion.div
-                        key={index}
-                        style={{ scale }}
-                        className="absolute top-0 flex h-full w-full items-center justify-center"
-                    >
-                        <div className={`relative h-[25vh] w-[25vw] ${IMAGE_STYLES[index] || ''}`}>
-                            <Image
-                                src={src}
-                                fill
-                                alt={alt}
-                                placeholder="blur"
-                                className="object-cover"
-                                priority={index < 2}
-                                loading={index < 2 ? 'eager' : 'lazy'}
-                            />
-                        </div>
-                    </motion.div>
+                    <ParallaxImage key={index} src={src} scale={scale} alt={alt} index={index} />
                 ))}
                 <motion.div
                     style={{ opacity }}
@@ -91,4 +98,12 @@ export default function Index() {
             </div>
         </div>
     );
+}
+
+interface ParallaxImageProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    src: any;
+    scale: MotionValue<number>;
+    alt: string;
+    index: number;
 }
