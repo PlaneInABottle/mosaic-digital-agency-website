@@ -11,7 +11,7 @@ export default function DNAParallax() {
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            setPerspective(window.innerWidth < 768 ? 400 : 1000);
+            setPerspective(window.innerWidth < 768 ? 600 : 1000);
             setBaseRadius(window.innerWidth < 768 ? 150 : 350);
         }
     }, []);
@@ -147,11 +147,11 @@ export default function DNAParallax() {
                 isolation: 'isolate',
             }}
         >
-            <div className="relative w-full pb-[60rem] text-center">
+            <div className="relative w-full pb-[40rem] text-center md:pb-[60rem]">
                 <span className="text-6xl font-bold md:text-9xl">{t('title')}</span>
             </div>
             <div
-                className="relative flex w-full flex-col items-center justify-center gap-8"
+                className="relative flex w-full flex-col items-center justify-center gap-8 md:gap-8"
                 style={{
                     perspective: `${perspective}px`,
                 }}
