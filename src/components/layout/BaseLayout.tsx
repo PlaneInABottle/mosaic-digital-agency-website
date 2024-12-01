@@ -22,11 +22,6 @@ export default async function BaseLayout({ children, locale }: Props) {
 
     return (
         <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
-            <Script
-                src="https://cloud.umami.is/script.js"
-                data-website-id="dc9c82e9-fc51-4019-8531-ee1b25cfef8d"
-                strategy="afterInteractive"
-            />
             <body className={clsx(inter.className, 'flex min-h-screen flex-col')}>
                 <ThemeProvider>
                     <NextIntlClientProvider messages={messages}>
@@ -39,6 +34,11 @@ export default async function BaseLayout({ children, locale }: Props) {
                     </NextIntlClientProvider>
                 </ThemeProvider>
             </body>
+            <Script
+                src="https://cloud.umami.is/script.js"
+                data-website-id="dc9c82e9-fc51-4019-8531-ee1b25cfef8d"
+                strategy="afterInteractive"
+            />
         </html>
     );
 }
