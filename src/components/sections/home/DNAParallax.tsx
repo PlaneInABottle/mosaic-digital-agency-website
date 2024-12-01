@@ -20,16 +20,15 @@ export default function DNAParallax() {
         target: ref,
         offset: ['start end', 'end start'],
     });
-    const totalImages = 8;
+    const totalImages = 7;
     const imageUrls = [
-        '/images/dragons/dragon_1.jpg',
-        '/images/dragons/dragon_2.jpg',
-        '/images/dragons/dragon_3.jpg',
-        '/images/dragons/dragon_4.jpg',
-        '/images/dragons/dragon_5.jpg',
-        '/images/dragons/dragon_6.jpg',
-        '/images/dragons/dragon_7.jpg',
-        '/images/dragons/dragon_8.jpg',
+        '/images/portfolio/atlas-lex.png',
+        '/images/portfolio/nouriv.png',
+        '/images/portfolio/quick-order.png',
+        '/images/portfolio/tofit.png',
+        '/images/portfolio/samsa-yoga.png',
+        '/images/portfolio/atlas-lex.png',
+        '/images/portfolio/nouriv.png',
     ];
     const yPosition = useTransform(scrollYProgress, [0, 1], ['0%', '400%']);
     const rotation6 = useTransform(scrollYProgress, [0, 1], [-180, 360]);
@@ -150,11 +149,11 @@ export default function DNAParallax() {
                 isolation: 'isolate',
             }}
         >
-            <div className="relative w-full pb-[80rem] text-center">
+            <div className="relative w-full pb-[60rem] text-center">
                 <span className="text-6xl font-bold md:text-9xl">{t('title')}</span>
             </div>
             <div
-                className="relative flex w-full flex-col items-center justify-center gap-16"
+                className="relative flex w-full flex-col items-center justify-center gap-8"
                 style={{
                     perspective: `${perspective}px`,
                 }}
@@ -162,13 +161,13 @@ export default function DNAParallax() {
                 {[...Array(totalImages)].map((_, index) => (
                     <motion.div
                         key={index}
-                        className="relative h-[150px] w-[120px] md:h-[250px] md:w-[200px]"
+                        className="relative h-[150px] w-[120px] md:h-[220px] md:w-[350px]"
                         style={{
                             transform: transformForwardArray[index % 6],
                             willChange: 'transform',
                         }}
                     >
-                        <Image src={imageUrls[index]} alt="DNA" fill className="object-cover" />
+                        <Image src={imageUrls[index]} alt="DNA" fill className="object-contain" />
                     </motion.div>
                 ))}
             </div>
