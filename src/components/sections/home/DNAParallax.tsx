@@ -143,7 +143,7 @@ export default function DNAParallax() {
     // ... rest of the code ...
     return (
         <div
-            className="relative h-auto w-full bg-transparent"
+            className="relative h-auto w-full"
             ref={ref}
             style={{
                 transformStyle: 'preserve-3d',
