@@ -20,15 +20,13 @@ export default function DNAParallax() {
         target: ref,
         offset: ['start end', 'end start'],
     });
-    const totalImages = 7;
+    const totalImages = 5;
     const imageUrls = [
         '/images/portfolio/atlas-lex.png',
         '/images/portfolio/nouriv.png',
         '/images/portfolio/quick-order.png',
         '/images/portfolio/tofit.png',
         '/images/portfolio/samsa-yoga.png',
-        '/images/portfolio/atlas-lex.png',
-        '/images/portfolio/nouriv.png',
     ];
     const yPosition = useTransform(scrollYProgress, [0, 1], ['0%', '400%']);
     const rotation6 = useTransform(scrollYProgress, [0, 1], [-180, 360]);
