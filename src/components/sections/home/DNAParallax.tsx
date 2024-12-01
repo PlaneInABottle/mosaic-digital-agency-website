@@ -163,7 +163,10 @@ export default function DNAParallax() {
                     <motion.div
                         key={index}
                         className="relative h-[150px] w-[120px] md:h-[250px] md:w-[200px]"
-                        style={{ transform: transformForwardArray[index % 6] }}
+                        style={{
+                            transform: transformForwardArray[index % 6],
+                            willChange: 'transform',
+                        }}
                     >
                         <Image src={imageUrls[index]} alt="DNA" fill className="object-cover" />
                     </motion.div>
