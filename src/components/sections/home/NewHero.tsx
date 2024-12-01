@@ -2,11 +2,12 @@
 
 import ParallaxImg from '@/components/animation/ParallaxImg';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
+
 export default function NewHero() {
     const t = useTranslations('pages.home.hero');
-
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -15,12 +16,25 @@ export default function NewHero() {
     const clipPath = useTransform(scrollYProgress, [0, 1], ['circle(5%)', 'circle(100%)']);
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
     const scale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
+
     return (
         <div className="relative h-[450vh] w-full overflow-clip bg-black" ref={ref}>
             <motion.div
-                className="sticky top-0 h-screen w-full bg-[url('/images/mosaic-hero.jpg')] bg-cover bg-center bg-no-repeat"
+                className="sticky top-0 h-screen w-full"
                 style={{ scale, opacity, clipPath }}
-            />
+            >
+                <Image
+                    src="/images/mosaic-hero.jpg"
+                    alt="Mosaic Hero"
+                    fill
+                    priority
+                    quality={90}
+                    sizes="100vw"
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJyEwSkNOPTYwPTYyRkNUSFZIOS8xRkdWV1NfWlNJWGKBgoFOYX5kfX3/2wBDARUXFx4aHR4eHX5tJyE3fn19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                />
+            </motion.div>
             <ParallaxImg
                 start="10%"
                 end="80%"
