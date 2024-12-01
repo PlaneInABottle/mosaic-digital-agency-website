@@ -22,12 +22,12 @@ export default async function BaseLayout({ children, locale }: Props) {
 
     return (
         <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
-            <Script
-                defer
-                src="https://cloud.umami.is/script.js"
-                data-website-id="dc9c82e9-fc51-4019-8531-ee1b25cfef8d"
-            />
             <body className={clsx(inter.className, 'flex min-h-screen flex-col')}>
+                <Script
+                    defer
+                    src="https://cloud.umami.is/script.js"
+                    data-website-id="dc9c82e9-fc51-4019-8531-ee1b25cfef8d"
+                />
                 <ThemeProvider>
                     <NextIntlClientProvider messages={messages}>
                         <Suspense fallback={null}>
