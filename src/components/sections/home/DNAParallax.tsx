@@ -147,6 +147,7 @@ export default function DNAParallax() {
             ref={ref}
             style={{
                 transformStyle: 'preserve-3d',
+                backfaceVisibility: 'hidden',
             }}
         >
             <div className="relative w-full pb-[80rem] text-center">
@@ -156,6 +157,7 @@ export default function DNAParallax() {
                 className="relative flex w-full flex-col items-center justify-center gap-16"
                 style={{
                     perspective: `${perspective}px`,
+                    backfaceVisibility: 'hidden',
                 }}
             >
                 {[...Array(totalImages)].map((_, index) => (
