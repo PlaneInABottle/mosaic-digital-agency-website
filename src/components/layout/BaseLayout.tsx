@@ -8,6 +8,7 @@ import LoadingBar from '@/components/navigation/LoadingBar';
 import '@/app/styles/globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 import Footer from '@/components/layout/Footer';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,11 @@ export default async function BaseLayout({ children, locale }: Props) {
 
     return (
         <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
+            <Script
+                defer
+                src="https://cloud.umami.is/script.js"
+                data-website-id="dc9c82e9-fc51-4019-8531-ee1b25cfef8d"
+            />
             <body className={clsx(inter.className, 'flex min-h-screen flex-col')}>
                 <ThemeProvider>
                     <NextIntlClientProvider messages={messages}>
