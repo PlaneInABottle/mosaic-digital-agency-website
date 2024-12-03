@@ -4,7 +4,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { GraduationCap, Code2, Trophy, Users, Rocket, Target, Wrench } from 'lucide-react';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 export default function About() {
     const t = useTranslations('pages.home.about');
@@ -14,13 +14,13 @@ export default function About() {
             {/* Fixed Left Side */}
             <div className="top-0 z-10 flex h-screen w-full flex-col items-center justify-center md:sticky md:w-1/2">
                 <span className="mb-6 text-4xl font-bold text-white">{t('topper')}</span>
-                {/* <Image
+                <Image
                     src="/images/ben-png.png"
                     alt={t('imageAlt')}
                     width={560}
                     height={600}
                     className="rounded-2xl object-cover"
-                /> */}
+                />
             </div>
 
             {/* Scrollable Right Side */}
