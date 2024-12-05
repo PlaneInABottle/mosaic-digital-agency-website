@@ -26,7 +26,14 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
             siteName: t('siteName'), // Add this translation
             locale: locale,
             type: 'website',
-            images: ['/images/og-image(2).png'],
+            images: [
+                {
+                    url: '/images/og-image(2).png',
+                    width: 400,
+                    height: 400,
+                    alt: t('title'),
+                },
+            ],
             url: 'https://www.mosaicdigitalagency.com',
             metadataBase: new URL('https://mosaicdigitalagency.com/'),
         },
