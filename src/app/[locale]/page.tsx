@@ -25,8 +25,14 @@ const Contact = dynamic(() => import('@/components/sections/home/Contact'), {
     ssr: true,
 });
 
-export async function generateMetadata() {
-    const t = await getTranslations('metadata.pages.home');
+type Props = {
+    params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+    const { locale } = await params;
+
+    const t = await getTranslations({ locale, namespace: 'metadata.pages.home' });
     return {
         title: t('title'),
         description: t('description'),
@@ -36,14 +42,14 @@ export async function generateMetadata() {
             type: 'website',
             images: [
                 {
-                    url: 'https://mosaicdigitalagency.com/images/og-image.webp',
+                    url: `/images/og-image-${locale}.webp`,
                     width: 300,
                     height: 200,
                     alt: t('title'),
                 },
             ],
-            url: 'https://mosaicdigitalagency.com/',
-            metadataBase: new URL('https://mosaicdigitalagency.com/'),
+            url: `https://mosaicdigitalagency.com/${locale}`,
+            metadataBase: new URL(`https://mosaicdigitalagency.com/${locale}`),
         },
     };
 }
