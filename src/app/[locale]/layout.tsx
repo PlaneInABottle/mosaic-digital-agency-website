@@ -26,14 +26,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
             siteName: t('siteName'), // Add this translation
             locale: locale,
             type: 'website',
-            images: [
-                {
-                    url: '/images/og-image(2).png',
-                    width: 1200,
-                    height: 630,
-                    alt: t('title'),
-                },
-            ],
+            images: ['/images/og-image(2).png'],
         },
     };
 }
