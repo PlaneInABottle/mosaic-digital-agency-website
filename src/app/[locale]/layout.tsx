@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
             locale: locale,
             type: 'website',
             images: ['/images/og-image(2).png'],
+            url: 'https://www.mosaicdigitalagency.com',
         },
     };
 }

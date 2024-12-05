@@ -42,6 +42,7 @@ export async function generateMetadata() {
                     alt: t('title'),
                 },
             ],
+            url: 'https://www.mosaicdigitalagency.com/',
         },
     };
 }
