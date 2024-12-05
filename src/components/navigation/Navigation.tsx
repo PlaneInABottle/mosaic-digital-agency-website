@@ -47,7 +47,7 @@ export default function Navigation() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden items-center space-x-8 lg:flex">
-                    {/* Phone Number
+                    {/* Phone Number */}
                     <a
                         href={`tel:${generalT('phone').replace(/\s/g, '')}`}
                         className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -55,16 +55,16 @@ export default function Navigation() {
                     >
                         <Phone className="h-4 w-4" />
                         <span>{generalT('phone')}</span>
-                    </a> */}
+                    </a>
                     {/* Email Address */}
-                    <a
+                    {/* <a
                         href={`mailto:${generalT('email')}`}
                         className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                         aria-label={t('emailUs')}
                     >
                         <Phone className="h-4 w-4" />
                         <span>{generalT('email')}</span>
-                    </a>
+                    </a> */}
 
                     {/* Navigation Links */}
                     {navigationLinks.map((link) => (
