@@ -19,10 +19,16 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
 
     return {
         title: t('title'),
+        description: t('description'), // Add this translation
         openGraph: {
+            title: t('title'),
+            description: t('description'), // Add this translation
+            siteName: t('siteName'), // Add this translation
+            locale: locale,
+            type: 'website',
             images: [
                 {
-                    url: '/images/og-image.png', // Replace with your actual image path
+                    url: '/images/og-image.png',
                     width: 1200,
                     height: 630,
                     alt: t('title'),

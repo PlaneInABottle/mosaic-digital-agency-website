@@ -1,7 +1,9 @@
 {
     "metadata": {
         "layout": {
-            "title": "Mosaic Digital Agency"
+            "title": "Mosaic Digital Agency",
+            "description": "Leading digital agency providing modern and creative digital solutions",
+            "siteName": "Mosaic Digital Agency"
         },
         "pages": {
             "home": {

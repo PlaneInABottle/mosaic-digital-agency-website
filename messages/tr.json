@@ -1,6 +1,10 @@
 {
     "metadata": {
-        "layout": { "title": "Mosaic Digital Agency" },
+        "layout": {
+            "title": "Mosaic Digital Agency",
+            "description": "Modern ve yaratıcı dijital çözümler sunan öncü dijital ajansınız",
+            "siteName": "Mosaic Digital Agency"
+        },
         "pages": {
             "home": {
                 "title": "Ana Sayfa | Mosaic Digital Agency",
