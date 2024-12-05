@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
             type: 'website',
             images: ['/images/og-image(2).png'],
             url: 'https://www.mosaicdigitalagency.com',
+            metadataBase: new URL('https://mosaicdigitalagency.com/'),
         },
     };
 }

@@ -43,6 +43,7 @@ export async function generateMetadata() {
                 },
             ],
             url: 'https://mosaicdigitalagency.com/',
+            metadataBase: new URL('https://mosaicdigitalagency.com/'),
         },
     };
 }
