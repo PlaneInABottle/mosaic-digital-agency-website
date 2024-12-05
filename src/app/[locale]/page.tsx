@@ -30,6 +30,19 @@ export async function generateMetadata() {
     return {
         title: t('title'),
         description: t('description'),
+        openGraph: {
+            title: t('title'),
+            description: t('description'), // Add this translation
+            type: 'website',
+            images: [
+                {
+                    url: '/images/og-image.png',
+                    width: 1200,
+                    height: 630,
+                    alt: t('title'),
+                },
+            ],
+        },
     };
 }
 
