@@ -19,6 +19,16 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
 
     return {
         title: t('title'),
+        openGraph: {
+            images: [
+                {
+                    url: '/images/og-image.png', // Replace with your actual image path
+                    width: 1200,
+                    height: 630,
+                    alt: t('title'),
+                },
+            ],
+        },
     };
 }
 
