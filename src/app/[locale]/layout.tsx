@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
             type: 'website',
             images: [
                 {
-                    url: '/images/og-image.png',
+                    url: '/images/og-image(2).png',
                     width: 1200,
                     height: 630,
                     alt: t('title'),
