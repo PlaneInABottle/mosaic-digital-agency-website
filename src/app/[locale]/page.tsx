@@ -37,8 +37,8 @@ export async function generateMetadata() {
             images: [
                 {
                     url: 'https://mosaicdigitalagency.com/images/og-image.webp',
-                    width: 400,
-                    height: 400,
+                    width: 300,
+                    height: 200,
                     alt: t('title'),
                 },
             ],
