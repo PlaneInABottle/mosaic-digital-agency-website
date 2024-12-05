@@ -40,7 +40,8 @@
             "portfolio": "Portfolio",
             "contact": "Contact",
             "toggleMenu": "Toggle Menu",
-            "callUs": "Call Us"
+            "callUs": "Call Us",
+            "emailUs": "Email Us"
         },
         "footer": {
             "description": "Leading digital agency providing modern and creative digital solutions. Professional services in web design, digital marketing, and software development.",

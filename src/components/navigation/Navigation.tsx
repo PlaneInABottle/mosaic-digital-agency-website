@@ -47,7 +47,7 @@ export default function Navigation() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden items-center space-x-8 lg:flex">
-                    {/* Phone Number */}
+                    {/* Phone Number
                     <a
                         href={`tel:${generalT('phone').replace(/\s/g, '')}`}
                         className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -55,6 +55,15 @@ export default function Navigation() {
                     >
                         <Phone className="h-4 w-4" />
                         <span>{generalT('phone')}</span>
+                    </a> */}
+                    {/* Email Address */}
+                    <a
+                        href={`mailto:${generalT('email')}`}
+                        className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        aria-label={t('emailUs')}
+                    >
+                        <Phone className="h-4 w-4" />
+                        <span>{generalT('email')}</span>
                     </a>
 
                     {/* Navigation Links */}
@@ -70,9 +79,9 @@ export default function Navigation() {
                 {/* Mobile Menu */}
                 <div className="flex items-center gap-4 lg:hidden">
                     <a
-                        href={`tel:${generalT('phone').replace(/\s/g, '')}`}
+                        href={`mailto:${generalT('email')}`}
                         className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-                        aria-label={t('callUs')}
+                        aria-label={t('emailUs')}
                     >
                         <Phone className="h-4 w-4" />
                     </a>
