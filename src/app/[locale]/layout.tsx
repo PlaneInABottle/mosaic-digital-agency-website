@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>) {
                     width: 400,
                     height: 400,
                     alt: t('title'),
+                    type: 'image/png',
                 },
             ],
             url: 'https://www.mosaicdigitalagency.com',
