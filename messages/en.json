@@ -96,7 +96,8 @@
                 "learnMore": "Our Services",
                 "firstWord": "MAKE",
                 "secondWord": "IMPACT",
-                "imageAlt": "Mosaic Digital Agency Hero Image"
+                "imageAlt": "Mosaic Digital Agency Hero Image",
+                "scrollDown": "Scroll Down"
             },
             "services": {
                 "ourServices": "Our Services",

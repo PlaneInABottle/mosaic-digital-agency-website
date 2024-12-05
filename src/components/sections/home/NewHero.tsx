@@ -16,9 +16,19 @@ export default function NewHero() {
     const clipPath = useTransform(scrollYProgress, [0, 1], ['circle(5%)', 'circle(100%)']);
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
     const scale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
+    const scrollIndicatorOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
     return (
         <div className="relative h-[450vh] w-full overflow-clip bg-black" ref={ref}>
+            <motion.div
+                className="fixed bottom-10 left-1/2 z-50 -translate-x-1/2 transform"
+                style={{ opacity: scrollIndicatorOpacity }}
+            >
+                <div className="animate-bounce text-center text-lg text-white">
+                    <span>{t('scrollDown')}</span>
+                    <div className="mt-2">↓</div>
+                </div>
+            </motion.div>
             <motion.div
                 className="sticky top-0 h-screen w-full"
                 style={{ scale, opacity, clipPath }}
