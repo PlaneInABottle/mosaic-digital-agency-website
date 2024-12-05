@@ -36,13 +36,13 @@ export async function generateMetadata() {
             type: 'website',
             images: [
                 {
-                    url: '/images/og-image.webp',
+                    url: 'https://mosaicdigitalagency.com/images/og-image.webp',
                     width: 1200,
                     height: 630,
                     alt: t('title'),
                 },
             ],
-            url: 'https://www.mosaicdigitalagency.com/',
+            url: 'https://mosaicdigitalagency.com/',
         },
     };
 }
