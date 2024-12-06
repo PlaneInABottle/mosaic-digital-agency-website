@@ -19,7 +19,7 @@ export default function TextParallax() {
 
     return (
         <div className="relative overflow-clip bg-black py-[40vh]">
-            <div ref={container} className="space-y-48">
+            <div ref={container} className="space-y-24 md:space-y-48">
                 <Slide
                     direction={'left'}
                     left={'-250%'}
