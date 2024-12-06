@@ -76,6 +76,11 @@ export default function NewHero() {
             <h1 className="relative text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
                 {t('firstWord')}
             </h1>
+            {t('secondWord') === 'IMPACT' && (
+                <h1 className="relative -mb-[10vh] mt-[10vh] text-center text-8xl font-bold mix-blend-difference md:text-[12rem]">
+                    AN
+                </h1>
+            )}
             <h1 className="relative mt-[20vh] text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
                 {t('secondWord')}
             </h1>

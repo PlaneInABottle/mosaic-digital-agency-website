@@ -94,6 +94,7 @@
                 "scrollToExplore": "Scroll to explore",
                 "contactUs": "Join Us",
                 "learnMore": "Our Services",
+
                 "firstWord": "MAKE",
                 "secondWord": "IMPACT",
                 "imageAlt": "Mosaic Digital Agency Hero Image",
@@ -136,8 +137,8 @@
                 }
             },
             "portfolio": {
-                "topper": "Portfolyo",
-                "title": "Portfolyo",
+                "topper": "Portfolio",
+                "title": "Portfolio",
                 "description": "Examples from the projects we've implemented using modern technologies and creative designs.",
                 "viewAll": "View All Projects"
             },
