@@ -81,7 +81,7 @@ export default function NewHero() {
                     AN
                 </h1>
             )}
-            <h1 className="relative mt-[20vh] text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
+            <h1 className="relative z-10 mt-[20vh] text-center text-8xl font-bold mix-blend-difference md:text-[24rem]">
                 {t('secondWord')}
             </h1>
             <div className="absolute inset-x-0 bottom-0 h-screen bg-gradient-to-t from-black to-transparent" />
